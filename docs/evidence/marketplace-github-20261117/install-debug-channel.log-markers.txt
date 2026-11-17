@@ -1,0 +1,21 @@
+2026-11-17T17:00:01.613Z [DEBUG] Attempting to load skills from plugin github default skillsPath: /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0/skills
+2026-11-17T17:00:20.211Z [DEBUG] MCP server "plugin:github:github": Starting connection with timeout of 30000ms
+2026-11-17T17:00:20.547Z [DEBUG] Using manifest version for github@github-claude-channel: 0.1.0
+2026-11-17T17:00:20.552Z [DEBUG] Plugin github@github-claude-channel version 0.1.0 already cached at /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T17:00:20.552Z [DEBUG] Resolved local plugin github to versioned cache: /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T17:00:20.650Z [DEBUG] MCP server "plugin:github:github": Successfully connected (transport: stdio, protocol: 2025-11-25) in 465ms
+2026-11-17T17:00:20.650Z [DEBUG] MCP server "plugin:github:github": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"github","version":"0.1.0"}}
+2026-11-17T17:00:20.650Z [DEBUG] [MCP] Server "plugin:github:github" connected with subscribe=false
+2026-11-17T17:00:20.657Z [DEBUG] MCP server "plugin:github:github": Channel notifications registered
+2026-11-17T17:01:18.266Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscribe
+2026-11-17T17:01:19.195Z [ERROR] MCP server "plugin:github:github" gh_failed
+2026-11-17T17:01:19.195Z [DEBUG] MCP server "plugin:github:github": Tool 'subscribe' failed after 0s: gh_failed
+2026-11-17T17:01:19.206Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T17:01:19.210Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 4ms
+2026-11-17T17:03:49.350Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscribe
+2026-11-17T17:03:50.179Z [ERROR] MCP server "plugin:github:github" gh_failed
+2026-11-17T17:03:50.179Z [DEBUG] MCP server "plugin:github:github": Tool 'subscribe' failed after 0s: gh_failed
+2026-11-17T17:03:50.195Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T17:03:50.200Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 5ms
+2026-11-17T17:05:40.896Z [DEBUG] MCP server "plugin:github:github": Sending SIGINT to MCP server process
+2026-11-17T17:05:40.947Z [DEBUG] MCP server "plugin:github:github": MCP server process exited cleanly

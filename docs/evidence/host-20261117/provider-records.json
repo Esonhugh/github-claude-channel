@@ -1,0 +1,917 @@
+[
+  {
+    "stage": "LIST",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 0,
+    "result_errors": [],
+    "results": []
+  },
+  {
+    "stage": "LIST",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 1,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "SUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "targets": [
+        {
+          "kind": "issue",
+          "repo": "o/r",
+          "number": 1,
+          "events": [
+            "lifecycle",
+            "comments"
+          ]
+        }
+      ]
+    },
+    "result_count": 1,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "SUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 2,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "SUBSCRIBE",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 3,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "CHANNEL",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 3,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "channels": "unavailable",
+      "monitor": "available",
+      "evidence": "controlled host fallback test explicitly disables channel lease; Monitor tool exists"
+    },
+    "result_count": 3,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "tool": "ToolSearch",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "query": "github-claude-channel Monitor",
+      "max_results": 5
+    },
+    "result_count": 4,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "tool": "Monitor",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "command": "/opt/homebrew/bin/bun /Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts stream --consumer-file /private/tmp/ghc-host-validation-20261117-r2/private/consumer.json --duration-ms 60000",
+      "timeout_ms": 90000,
+      "description": "GitHub channel isolated fallback validation"
+    },
+    "result_count": 5,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "AFTER_MONITOR",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "AFTER_MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 7,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_AFTER_MONITOR_0",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:16:50.756Z\",\"last_error\":null,\"next_poll_at\":1794932270756,\"pending_deliveries\":2,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935810000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "UNSUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "watch_id": "watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8"
+    },
+    "result_count": 7,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_AFTER_MONITOR_0",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:16:50.756Z\",\"last_error\":null,\"next_poll_at\":1794932270756,\"pending_deliveries\":2,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935810000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "UNSUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 8,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_AFTER_MONITOR_0",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:16:50.756Z\",\"last_error\":null,\"next_poll_at\":1794932270756,\"pending_deliveries\":2,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935810000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_UNSUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"unsubscribed\"}"
+      }
+    ]
+  },
+  {
+    "stage": "UNSUBSCRIBE",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 9,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIST_0",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":null,\"reset\":null},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:13:37.262Z\",\"last_error\":null,\"next_poll_at\":1794932077262,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"isolated binary started with explicit development channel approval\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935617000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_0",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_MONITOR_search_1",
+        "text": ""
+      },
+      {
+        "id": "toolu_MONITOR_1",
+        "text": "Monitor started (task bwpapab96, expires in 1m 30s unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_AFTER_MONITOR_0",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"subscriptions\":[{\"subscription_id\":\"sub_597aa84b-4934-4f59-9dbd-5a655fd86127\",\"target\":{\"host\":\"github.com\",\"repo\":\"o/r\",\"kind\":\"issue\",\"number\":1,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:16:50.756Z\",\"last_error\":null,\"next_poll_at\":1794932270756,\"pending_deliveries\":2,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled host fallback test explicitly disables channel lease; Monitor tool exists\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4500,\"reset\":1794935810000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_UNSUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8\",\"state\":\"unsubscribed\"}"
+      },
+      {
+        "id": "toolu_UNSUBSCRIBE_1",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":4500,\"reset\":1794935856000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  }
+]

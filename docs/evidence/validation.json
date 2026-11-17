@@ -1,0 +1,64 @@
+{
+  "validated_at": "2026-11-17T16:01:01.214786+00:00",
+  "phase": "independent-review-fixes",
+  "bun_version": "1.4.4",
+  "lock_sha256": "e8b8386f4278e77296aa1512e05ca30730f9dbb46615479f1300a72cca6a5c54",
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  },
+  "results": [
+    {
+      "command": [
+        "bun",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "evidence": "frozen-install.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "evidence": "bun-test.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "evidence": "typecheck.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "environment": {},
+      "exit_code": 0,
+      "evidence": "build.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "test",
+        "tests/integration.test.ts"
+      ],
+      "environment": {
+        "GHC_TEST_ENTRY": "dist/cli.js"
+      },
+      "exit_code": 0,
+      "evidence": "bundled-integration.txt"
+    }
+  ],
+  "external_host_and_github": "not covered by this worker"
+}

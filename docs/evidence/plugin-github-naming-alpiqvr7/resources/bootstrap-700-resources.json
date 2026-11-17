@@ -1,0 +1,11 @@
+{
+  "pids": [
+    698,
+    699,
+    700,
+    701
+  ],
+  "socket": "/tmp/ghc-502-33b5985616ff853b3867.sock",
+  "reclaimed": true,
+  "remaining_pids": []
+}

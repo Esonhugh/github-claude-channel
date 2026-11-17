@@ -1,0 +1,984 @@
+[
+  {
+    "stage": "LIVE_SUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "targets": [
+        {
+          "kind": "issue",
+          "repo": "Esonhugh/github-claude-channel",
+          "number": 3,
+          "events": [
+            "comments",
+            "lifecycle"
+          ]
+        }
+      ]
+    },
+    "result_count": 0,
+    "result_errors": [],
+    "results": []
+  },
+  {
+    "stage": "LIVE_SUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 1,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_SUBSCRIBE",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 2,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_CHANNEL_EVENT",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 2,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",
+      "through_seq": 1
+    },
+    "result_count": 2,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "channels": "unavailable",
+      "monitor": "available",
+      "evidence": "controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor"
+    },
+    "result_count": 3,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "tool": "ToolSearch",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "query": "github-claude-channel Monitor",
+      "max_results": 5
+    },
+    "result_count": 4,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "tool": "Monitor",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "command": "/opt/homebrew/bin/bun /Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts stream --consumer-file /private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json --duration-ms 90000",
+      "timeout_ms": 120000,
+      "description": "Real GitHub channel Monitor fallback validation"
+    },
+    "result_count": 5,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_MONITOR",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_VERIFY",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__events",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc"
+    },
+    "result_count": 6,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_VERIFY",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",
+      "through_seq": 2
+    },
+    "result_count": 7,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_VERIFY",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 8,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_1",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":2}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_VERIFY",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 9,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_1",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_2",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:36:26.203Z\",\"last_error\":null,\"next_poll_at\":1794933446204,\"pending_deliveries\":0,\"acked_seq\":2,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4892,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_UNSUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {
+      "watch_id": "watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209"
+    },
+    "result_count": 9,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_1",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_2",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:36:26.203Z\",\"last_error\":null,\"next_poll_at\":1794933446204,\"pending_deliveries\":0,\"acked_seq\":2,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4892,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_UNSUBSCRIBE",
+    "stream": true,
+    "tool": "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 10,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_1",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_2",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:36:26.203Z\",\"last_error\":null,\"next_poll_at\":1794933446204,\"pending_deliveries\":0,\"acked_seq\":2,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4892,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_UNSUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"unsubscribed\"}"
+      }
+    ]
+  },
+  {
+    "stage": "LIVE_UNSUBSCRIBE",
+    "stream": true,
+    "available_tools": [
+      "Agent",
+      "Bash",
+      "Edit",
+      "ListAgents",
+      "Monitor",
+      "Read",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "Skill",
+      "ToolSearch",
+      "Workflow",
+      "Write",
+      "mcp__plugin_github-claude-channel_github-claude-channel__ack",
+      "mcp__plugin_github-claude-channel_github-claude-channel__delivery",
+      "mcp__plugin_github-claude-channel_github-claude-channel__events",
+      "mcp__plugin_github-claude-channel_github-claude-channel__snapshot",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscribe",
+      "mcp__plugin_github-claude-channel_github-claude-channel__subscriptions",
+      "mcp__plugin_github-claude-channel_github-claude-channel__unsubscribe",
+      "DeferredToolPlaceholder"
+    ],
+    "input": {},
+    "result_count": 11,
+    "result_errors": [],
+    "results": [
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"subscribed\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"},\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_SUBSCRIBE_1",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:31:52.406Z\",\"last_error\":null,\"next_poll_at\":1794933172407,\"pending_deliveries\":0,\"acked_seq\":0,\"gap\":null}],\"delivery\":{\"mode\":\"channel\",\"status\":\"attached\",\"evidence\":\"actual isolated binary explicit development channel confirmation\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4898,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":1}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_1",
+        "text": "{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\",\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_search_2",
+        "text": ""
+      },
+      {
+        "id": "toolu_LIVE_MONITOR_2",
+        "text": "Monitor started (task b1l1btj2p, expires in 2m unless the source ends first; you get one notice at expiry — re-arm if you still need the watch). You will be notified on each event. Keep working — do not poll or sleep. Events may arrive while you are waiting for the user — an event is not their reply."
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_0",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"events\":[{\"seq\":1,\"event\":{\"schema_version\":1,\"event_id\":\"evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954240894\",\"occurred_at\":\"2026-11-17T16:32:58Z\",\"observed_at\":\"2026-11-17T16:33:25.379Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954240894\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954240894,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoFLfg\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:32:58Z\",\"updated_at\":\"2026-11-17T16:32:58Z\",\"body\":\"LIVE_HOST_CHANNEL_EVENT_20261117 — real GitHub comment, expected to reach the isolated Claude channel session.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954240894/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}},{\"seq\":2,\"event\":{\"schema_version\":1,\"event_id\":\"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379\",\"type\":\"issue.comment.created\",\"host\":\"github.com\",\"repository\":\"esonhugh/github-claude-channel\",\"subject\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"source_id\":\"comment:6954292191\",\"occurred_at\":\"2026-11-17T16:34:53Z\",\"observed_at\":\"2026-11-17T16:34:55.317Z\",\"evidence\":\"source_record\",\"actor\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"data\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191\",\"html_url\":\"https://github.com/Esonhugh/github-claude-channel/issues/3#issuecomment-6954292191\",\"issue_url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/3\",\"id\":6954292191,\"node_id\":\"IC_kwDOVwsHTs8AAAABnoIT3w\",\"user\":{\"login\":\"Esonhugh\",\"id\":32677240,\"node_id\":\"MDQ6VXNlcjMyNjc3MjQw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32677240?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Esonhugh\",\"html_url\":\"https://github.com/Esonhugh\",\"followers_url\":\"https://api.github.com/users/Esonhugh/followers\",\"following_url\":\"https://api.github.com/users/Esonhugh/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Esonhugh/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Esonhugh/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Esonhugh/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Esonhugh/orgs\",\"repos_url\":\"https://api.github.com/users/Esonhugh/repos\",\"events_url\":\"https://api.github.com/users/Esonhugh/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Esonhugh/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"created_at\":\"2026-11-17T16:34:53Z\",\"updated_at\":\"2026-11-17T16:34:53Z\",\"body\":\"LIVE_HOST_MONITOR_EVENT_20261117 — a new real GitHub comment after explicit fallback; expected on the current host Monitor, not Channels.\",\"author_association\":\"OWNER\",\"pin\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/Esonhugh/github-claude-channel/issues/comments/6954292191/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null,\"minimized\":null}}}],\"next_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_1",
+        "text": "{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"acked_seq\":2}"
+      },
+      {
+        "id": "toolu_LIVE_VERIFY_2",
+        "text": "{\"watches\":[{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"subscriptions\":[{\"subscription_id\":\"sub_272cb81c-3fa0-49c2-86b3-cdae810562cc\",\"target\":{\"host\":\"github.com\",\"repo\":\"esonhugh/github-claude-channel\",\"kind\":\"issue\",\"number\":3,\"events\":[\"comments\",\"lifecycle\"]},\"events\":[\"comments\",\"lifecycle\"],\"state\":\"active\",\"last_successful_poll\":\"2026-11-17T16:36:26.203Z\",\"last_error\":null,\"next_poll_at\":1794933446204,\"pending_deliveries\":0,\"acked_seq\":2,\"gap\":null}],\"delivery\":{\"mode\":\"monitor\",\"status\":\"detached\",\"evidence\":\"controlled real-GitHub host test explicitly detaches Channels in favor of available Monitor\"}}],\"next_cursor\":null,\"message\":\"Current consumer subscriptions\",\"quota\":{\"remaining\":4892,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      },
+      {
+        "id": "toolu_LIVE_UNSUBSCRIBE_0",
+        "text": "{\"watch_id\":\"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209\",\"state\":\"unsubscribed\"}"
+      },
+      {
+        "id": "toolu_LIVE_UNSUBSCRIBE_1",
+        "text": "{\"watches\":[],\"next_cursor\":null,\"message\":\"无订阅\",\"quota\":{\"remaining\":4892,\"reset\":1794935719000},\"authentication_error\":null,\"consumer_bridge\":{\"recovery_file\":\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"stream_argv\":[\"/opt/homebrew/Cellar/bun/1.3.14/bin/bun\",\"/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/src/cli.ts\",\"stream\",\"--consumer-file\",\"/private/tmp/ghc-host-validation-20261117-live-r2/private/consumer.json\",\"--duration-ms\",\"300000\"],\"note\":\"HOST Monitor only when Channels explicitly unavailable and Monitor explicitly available. No automatic launch or renewal.\"}}"
+      }
+    ]
+  }
+]

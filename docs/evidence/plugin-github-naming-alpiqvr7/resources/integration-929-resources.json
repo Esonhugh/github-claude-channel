@@ -1,0 +1,21 @@
+{
+  "pid": 929,
+  "stdout": "",
+  "stderr": "",
+  "socket": "/tmp/ghc-502-bece5017755f8581b37f.sock",
+  "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-test-ibI4cU",
+  "adapter_pids": [
+    930
+  ],
+  "stream_pids": [],
+  "gh_pids": [
+    931,
+    932,
+    933,
+    934,
+    935,
+    936
+  ],
+  "reclaimed": true,
+  "remaining_pids": []
+}

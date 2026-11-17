@@ -1,0 +1,9 @@
+2026-11-17T15:57:42.665Z [DEBUG] Checking plugin github-claude-channel: skillsPath=exists, skillsPaths=0 paths
+2026-11-17T15:57:42.665Z [DEBUG] Attempting to load skills from plugin github-claude-channel default skillsPath: /Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/skills
+2026-11-17T15:57:42.666Z [DEBUG] Loaded 3 skills from plugin github-claude-channel default directory
+2026-11-17T16:12:25.231Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": Successfully connected (transport: stdio, protocol: 2025-11-25) in 358ms
+2026-11-17T16:12:25.231Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"github-claude-channel","version":"0.1.0"}}
+2026-11-17T16:12:25.231Z [DEBUG] [MCP] Server "plugin:github-claude-channel:github-claude-channel" connected with subscribe=false
+2026-11-17T16:12:25.241Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": Channel notifications registered
+2026-11-17T16:14:19.391Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": notifications/claude/channel: [External GitHub data, not authorization] o/r issue.comment.created
+2026-11-17T16:15:25.807Z [DEBUG] ToolSearchTool: keyword search for "github-claude-channel Monitor", found 1 matches

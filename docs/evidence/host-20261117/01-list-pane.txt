@@ -1,0 +1,40 @@
+╭─── EsonClaw v2.1.297 ─────────────────────────────────────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting started                             │
+│                    Welcome back!                   │ Ask Claude to create a new app or clone a repository │
+│                                                    │ ──────────────────────────────────────────────────── │
+│                       ▐▛███▜▌                      │ Recent activity                                      │
+│                      ▝▜█████▛▘                     │ No recent activity                                   │
+│                        ▘▘ ▝▝                       │                                                      │
+│                                                    │                                                      │
+│            Opus 5.5 · API Usage Billing            │                                                      │
+│  /private/tmp/ghc-host-validation-20261117-r2/work │                                                      │
+╰───────────────────────────────────────────���───────────────────────────────────────────────────────────────╯
+
+  ↑ Opus now defaults to 1M context · 5x more room, same pricing
+  ↑
+  Listening for channel messages from: server:plugin:github-claude-channel:github-claude-channel
+  Experimental · inbound messages will be pushed into this session, this carries prompt injection risks. Restart Claude Code without
+  --dangerously-load-development-channels to disable.
+  server:plugin:github-claude-channel:github-claude-channel · no MCP server configured with that name
+
+  Debug mode enabled
+  Logging to: /private/tmp/ghc-host-validation-20261117-r2/evidence/debug.log
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /github-claude-channel:list
+   ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���────────────
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [],
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+
+✢ Channelling…                                                                                                                                 (0s · ↑ 1 tokens)
+⏺ HOST_LIST_DONE
+─────────────────────────────────────────────────────────��─────────────────────────────────────────────────────────────────────────────────────────────────────
+✻ Crunched for 0s · done 12:12 AM
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵��� bypass permissions on (shift+tab to cycle)                                                                                                          Debug

@@ -1,0 +1,89 @@
+{
+  "binary": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/claude-code/built-claude",
+  "sha256": "a23e4ce1e0d301ca4d2cc691e30100628ee603a7ea6e1431b148ba064de36145",
+  "mtime": 1794928613.4667957,
+  "host_version": "2.1.297",
+  "term_target": "term-2",
+  "host_pid": 67703,
+  "dimensions": [
+    160,
+    45
+  ],
+  "evidence_root": "/private/tmp/ghc-host-validation-20261117-r2/evidence",
+  "model": "deterministic loopback SSE fixture, no live model",
+  "github": "fake gh fixture for host layer; real GitHub is a separate run",
+  "first_attempt": {
+    "target": "term-1",
+    "result": "not covered",
+    "reason": "reference launcher discarded channel arguments; fixture lacked deferred ToolSearch handling; raw evidence retained separately"
+  },
+  "startup_flags": [
+    "--dangerously-skip-permissions",
+    "--plugin-dir",
+    "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel",
+    "--dangerously-load-development-channels",
+    "server:plugin:github-claude-channel:github-claude-channel"
+  ],
+  "assertions": [
+    {
+      "assertion_id": "list",
+      "subject": "skill dispatch invokes subscriptions and sees empty list",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "subscribe",
+      "subject": "skill invokes subscribe and returns durable watch ID",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "channels",
+      "subject": "actual binary channel handler receives comment notification",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "monitor",
+      "subject": "actual binary Monitor emits replay and fresh comment event after explicit fallback",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "detached",
+      "subject": "stream exits; one watch remains with monitor detached delivery",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "unsubscribe",
+      "subject": "skill unsubscribes and subscriptions returns empty",
+      "runtime_state": "done",
+      "validation_verdict": "passed"
+    },
+    {
+      "assertion_id": "live-model-language",
+      "validation_verdict": "not covered",
+      "reason_if_not_passed": "fixture scripts tool calls, does not prove natural-language interpretation"
+    },
+    {
+      "assertion_id": "automatic-host-detection",
+      "validation_verdict": "not covered",
+      "reason_if_not_passed": "host evidence explicitly supplied; no universal enablement introspection"
+    },
+    {
+      "assertion_id": "official-parity",
+      "validation_verdict": "not covered",
+      "reason_if_not_passed": "no official-binary comparison requested"
+    },
+    {
+      "assertion_id": "host-taskstop",
+      "validation_verdict": "not covered",
+      "reason_if_not_passed": "monitor ended naturally; explicit TaskStop not exercised"
+    }
+  ],
+  "provider_pid": 67478,
+  "provider_stop_requested": true,
+  "remaining_known_pids": [],
+  "remaining_sockets": []
+}

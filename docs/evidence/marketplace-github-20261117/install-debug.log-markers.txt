@@ -1,0 +1,24 @@
+2026-11-17T16:56:55.125Z [INFO] SSH not configured for GitHub, using HTTPS for Esonhugh/github-claude-channel
+2026-11-17T16:56:55.128Z [DEBUG] git pull: cwd=/private/tmp/ghc-self-marketplace-20261117/config/plugins/marketplaces/Esonhugh-github-claude-channel ref=default
+2026-11-17T16:56:55.132Z [DEBUG] git clone: url=https://github.com/Esonhugh/github-claude-channel.git ref=default timeout=120000ms
+2026-11-17T16:56:57.303Z [DEBUG] git clone succeeded: https://github.com/Esonhugh/github-claude-channel.git
+2026-11-17T16:56:57.305Z [DEBUG] [Plugins:cache] published /private/tmp/ghc-self-marketplace-20261117/config/plugins/marketplaces/Esonhugh-github-claude-channel
+2026-11-17T16:56:57.306Z [DEBUG] Reading marketplace from /private/tmp/ghc-self-marketplace-20261117/config/plugins/marketplaces/Esonhugh-github-claude-channel/.claude-plugin/marketplace.json
+2026-11-17T16:56:57.354Z [DEBUG] Added marketplace source: github-claude-channel
+2026-11-17T16:57:33.456Z [DEBUG] Caching plugin from source: "/private/tmp/ghc-self-marketplace-20261117/config/plugins/marketplaces/github-claude-channel" to temporary path /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/temp_local_1794934653456_svg59b
+2026-11-17T16:57:33.532Z [DEBUG] Using manifest version for github@github-claude-channel: 0.1.0
+2026-11-17T16:57:33.535Z [DEBUG] [Plugins:cache] published /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T16:57:33.539Z [DEBUG] Added installed plugin: github@github-claude-channel (scope: user)
+2026-11-17T16:57:33.579Z [DEBUG] Using manifest version for github@github-claude-channel: 0.1.0
+2026-11-17T16:57:33.580Z [DEBUG] Plugin github@github-claude-channel version 0.1.0 already cached at /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T16:57:33.580Z [DEBUG] Resolved local plugin github to versioned cache: /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T16:58:21.228Z [DEBUG] Attempting to load skills from plugin github default skillsPath: /private/tmp/ghc-self-marketplace-20261117/config/plugins/cache/github-claude-channel/github/0.1.0/skills
+2026-11-17T16:58:21.299Z [DEBUG] MCP server "plugin:github:github": Starting connection with timeout of 30000ms
+2026-11-17T16:58:25.329Z [DEBUG] MCP server "plugin:github:github": Successfully connected (transport: stdio, protocol: 2025-11-25) in 4033ms
+2026-11-17T16:58:25.329Z [DEBUG] MCP server "plugin:github:github": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"github","version":"0.1.0"}}
+2026-11-17T16:58:25.329Z [DEBUG] [MCP] Server "plugin:github:github" connected with subscribe=false
+2026-11-17T16:58:25.349Z [DEBUG] MCP server "plugin:github:github": Channel notifications skipped: server plugin:github:github not in --channels list for this session
+2026-11-17T16:58:53.282Z [DEBUG] ToolSearchTool: keyword search for "github subscriptions", found 5 matches
+2026-11-17T16:58:53.295Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T16:58:53.304Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 9ms
+2026-11-17T16:59:31.408Z [DEBUG] MCP server "plugin:github:github": Sending SIGINT to MCP server process

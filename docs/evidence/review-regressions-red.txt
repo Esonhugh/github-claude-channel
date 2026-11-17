@@ -1,0 +1,99 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/store.test.ts:
+127 |   const consumer=s.session()
+128 |   const rule=normalizeSubscription({targets:[{kind:'run',repo:'o/r',run_id:'3',attempt:1}]})
+129 |   const t=rule.targets[0]!,key=targetKey(t),prefix='run:3:attempt:1'
+130 |   const pending=sample({[prefix]:{id:3,run_attempt:1,status:'completed'},[prefix+'/job:8']:{status:'in_progress'},[prefix+'/job:8/step:1']:{status:'in_progress'}})
+131 |   const w=s.register(consumer.id,rule,new Map([[key,pending]])),sub=w.subscriptions[0].subscription_id
+132 |   expect(s.get('SELECT next_poll FROM targets WHERE key=?',key).next_poll).toBeLessThan(Number.MAX_SAFE_INTEGER)
+                                                                                 ^
+error: expect(received).toBeLessThan(expected)
+
+Expected: < 9007199254740991
+Received: 9007199254740991
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/store.test.ts:132:76)
+(fail) fixed completed attempt keeps polling until requested child records are terminal and final reconciliation confirms [40.21ms]
+
+tests/core.test.ts:
+15 | })
+16 | test('same target identity merges event families before canonical deduplication, in either order',()=>{
+17 |   const comments={kind:'issue',repo:'o/r',number:1,events:['comments']}
+18 |   const lifecycle={kind:'issue',repo:'o/r',number:1,events:['lifecycle']}
+19 |   const merged=normalizeSubscription({targets:[{...comments,events:['comments','lifecycle']}]})
+20 |   expect(normalizeSubscription({targets:[comments,lifecycle]})).toEqual(merged)
+                                                                     ^
+error: expect(received).toEqual(expected)
+
+@@ -10,2 +10,10 @@
+          "comments",
++       ],
++       "host": "github.com",
++       "kind": "issue",
++       "number": 1,
++       "repo": "o/r",
++     },
++     {
++       "events": [
+          "lifecycle",
+
+- Expected  - 0
++ Received  + 8
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/core.test.ts:20:65)
+(fail) same target identity merges event families before canonical deduplication, in either order [17.57ms]
+
+tests/gh.test.ts:
+65 |       let previous=await gh.sample(narrow)
+66 |       // Even a previously stabilized narrower scope must not suppress newly requested children.
+67 |       previous=await gh.sample(narrow,previous)
+68 |       const expanded=normalizeSubscription({targets:[{kind:'workflow',repo:'o/r',workflow_id:'9',events:['run','job','step']}]}).targets[0]!
+69 |       const next=await gh.sample(expanded,previous)
+70 |       expect(next.records['run:3:attempt:1/job:8/step:1']?.status).toBe('completed')
+                                                                        ^
+error: expect(received).toBe(expected)
+
+Expected: "completed"
+Received: undefined
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/gh.test.ts:70:68)
+      at async fake (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/gh.test.ts:15:13)
+      at async <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/gh.test.ts:59:9)
+(fail) completed workflow runs collect newly requested jobs and steps instead of reusing incomplete samples [76.80ms]
+
+tests/integration.test.ts:
+262 |     const a=await ctx.client()
+263 |     const targets=[{kind:'issue',repo:'o/r',number:1,events:['comments']},{kind:'issue',repo:'o/r',number:1,events:['lifecycle']}]
+264 |     const watch=await a.call('subscribe',{targets:reverse?targets.reverse():targets})
+265 |     const sub=watch.subscriptions.find((s:any)=>s.events.includes('comments')).subscription_id
+266 |     await until(async()=> (await a.call('snapshot',{subscription_id:sub})).snapshot.records['comment:1']?true:undefined)
+267 |     expect((await a.call('events',{subscription_id:sub})).events).toHaveLength(0)
+                                                                        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/integration.test.ts:267:67)
+(fail) split issue targets share one baseline and never announce historical comments (reverse=false) [562.02ms]
+262 |     const a=await ctx.client()
+263 |     const targets=[{kind:'issue',repo:'o/r',number:1,events:['comments']},{kind:'issue',repo:'o/r',number:1,events:['lifecycle']}]
+264 |     const watch=await a.call('subscribe',{targets:reverse?targets.reverse():targets})
+265 |     const sub=watch.subscriptions.find((s:any)=>s.events.includes('comments')).subscription_id
+266 |     await until(async()=> (await a.call('snapshot',{subscription_id:sub})).snapshot.records['comment:1']?true:undefined)
+267 |     expect((await a.call('events',{subscription_id:sub})).events).toHaveLength(0)
+                                                                        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/integration.test.ts:267:67)
+(fail) split issue targets share one baseline and never announce historical comments (reverse=true) [530.22ms]
+
+ 0 pass
+ 22 filtered out
+ 5 fail
+ 8 expect() calls
+Ran 5 tests across 4 files. [1492.00ms]

@@ -1,0 +1,41 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/packaging.test.ts:
+ 5 | const root=resolve(import.meta.dir,'..')
+ 6 | const json=(path:string)=>JSON.parse(readFileSync(join(root,path),'utf8'))
+ 7 |
+ 8 | test('root plugin and marketplace share a valid root-relative source with matching names and version',()=>{
+ 9 |   const plugin=json('.claude-plugin/plugin.json')
+10 |   expect(plugin.name).toBe('github')
+                           ^
+error: expect(received).toBe(expected)
+
+Expected: "github"
+Received: "github-claude-channel"
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/packaging.test.ts:10:23)
+(fail) root plugin and marketplace share a valid root-relative source with matching names and version [10.00ms]
+26 |   expect(json('package.json').name).toBe('github-claude-channel')
+27 | })
+28 |
+29 | test('github MCP key and current-session skills match the github plugin namespace',()=>{
+30 |   const mcp=json('.mcp.json')
+31 |   expect(Object.keys(mcp.mcpServers)).toEqual(['github'])
+                                           ^
+error: expect(received).toEqual(expected)
+
+  [
+-   "github",
++   "github-claude-channel",
+  ]
+
+- Expected  - 1
++ Received  + 1
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/packaging.test.ts:31:39)
+(fail) github MCP key and current-session skills match the github plugin namespace [14.31ms]
+
+ 0 pass
+ 2 fail
+ 2 expect() calls
+Ran 2 tests across 1 file. [81.00ms]

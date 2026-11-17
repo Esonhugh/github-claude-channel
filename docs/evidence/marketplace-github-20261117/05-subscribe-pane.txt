@@ -1,0 +1,44 @@
+│                                                    │ ──────────────────────────────────────────────────── │
+│                       ▐▛███▜▌                      │ Recent activity                                      │
+│                      ▝▜█████▛▘                     │ No recent activity                                   │
+│                        ▘▘ ▝▝                       │                                                      │
+│                                                    │                                                      │
+│            Opus 5.5 · API Usage Billing            │                                                      │
+│   /…/tmp/ghc-self-marketplace-final-20261117/work  │                                                      │
+╰──────────────────────────────────────────────────────���────────────────────────────────────────────────────╯
+
+  ↑ Opus now defaults to 1M context · 5x more room, same pricing
+  ↑
+  Listening for channel messages from: plugin:github@github-claude-channel
+  Experimental · inbound messages will be pushed into this session, this carries prompt injection risks. Restart Claude Code without
+  --dangerously-load-development-channels to disable.
+
+  Debug mode enabled
+  Logging to: /private/tmp/ghc-self-marketplace-final-20261117/evidence/debug-channel.log
+
+───────────────────────────────────────��───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /github:subscribe 监听 Esonhugh/github-claude-channel issue #3 的评论
+
+  plugin:github:github - subscribe (MCP)(targets: [{"kind":"issue","repo":"Esonhugh/github-claude-channel","number":3,"events":["comments"]}])
+⏺ ⎿  Running…
+     {
+✶ Waddl"watch_id": "watch_b24dce4e-149a-4842-91de-09846870c4f7",                                                                               (0s · ↓ 4 tokens)
+       "state": "subscribed",
+─────… +43 lines (ctrl+o to expand)────────────────────────────────────────���──────────────────────────────────────────────────────────────────────────────────
+
+✶ Waddling…                                                                                                                                   (4s · ↑ 26 tokens)
+⏺ plugin:github:github - subscriptions (MCP)
+  ⎿  {─────────────────────────────────────���──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       "watches": [
+         {
+     … +53 lines (ctrl+o to expand)
+
+✶ Waddling…                                                                                                                                   (4s · ↑ 26 tokens)
+⏺ HOST_FINAL_SUBSCRIBE_DONE
+────────────────────────────────────────────────────────────────────────────────────���─────────────────────────────────────────────────────────────────────────
+✻ Cogitated for 4s · done 1:08 AM
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵��� bypass permissions on (shift+tab to cycle)                                                                                                          Debug

@@ -1,0 +1,359 @@
+[
+  {
+    "subscription_id": "sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4",
+    "seq": 1,
+    "event_id": "evt_48e4cdced0f2e68ec770ab87b7b8d12cff5f61425146792d89e0d3a8db9ef5c7",
+    "type": "issue.opened",
+    "source_id": "issue:2",
+    "observed_at": "2026-11-17T16:16:28.430Z",
+    "occurred_at": "2026-11-17T16:16:00Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6448924685,
+      "number": 2,
+      "state": "open",
+      "type": null,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2",
+      "body": {
+        "bytes": 154,
+        "sha256": "e62a808e5b652d4435297ffa2a34ec213aa71eb88403ab37afb5dbebfe3a631e"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_58acb820-9b97-48a0-9a71-7d81b49293fe",
+    "seq": 1,
+    "event_id": "evt_0494a4eee2516f5c6bae6146ca58e2688c5d3f41680dd49ddb8bda7a0b8a1692",
+    "type": "issue.comment.created",
+    "source_id": "comment:6953807070",
+    "observed_at": "2026-11-17T16:17:01.156Z",
+    "occurred_at": "2026-11-17T16:16:42Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953807070,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953807070",
+      "body": {
+        "bytes": 70,
+        "sha256": "9e18c3280c37b7b14739560f8da9177163d8613005a485a1cbf9ba1bf8fff267"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_49be4fcf-e4a0-44e7-93ff-d6fdb8e71a66",
+    "seq": 1,
+    "event_id": "evt_0494a4eee2516f5c6bae6146ca58e2688c5d3f41680dd49ddb8bda7a0b8a1692",
+    "type": "issue.comment.created",
+    "source_id": "comment:6953807070",
+    "observed_at": "2026-11-17T16:17:01.156Z",
+    "occurred_at": "2026-11-17T16:16:42Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953807070,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953807070",
+      "body": {
+        "bytes": 70,
+        "sha256": "9e18c3280c37b7b14739560f8da9177163d8613005a485a1cbf9ba1bf8fff267"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_58acb820-9b97-48a0-9a71-7d81b49293fe",
+    "seq": 2,
+    "event_id": "evt_38a591c0e1c7021185c72a9a7169b64c5ba04738ac1f5779b1a8db5144a30048",
+    "type": "issue.comment.edited",
+    "source_id": "comment:6953807070",
+    "observed_at": "2026-11-17T16:17:31.980Z",
+    "occurred_at": "2026-11-17T16:17:14Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953807070,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953807070",
+      "body": {
+        "bytes": 68,
+        "sha256": "adb9277c7a400d1931029db86eaaff577d595d6c7d9f014d5057a9bb4e1f6973"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_58acb820-9b97-48a0-9a71-7d81b49293fe",
+    "seq": 3,
+    "event_id": "evt_5fed1d3eecba66a9a0955d3ce2e4823198d2121404e195d84425c3fad8322d8e",
+    "type": "issue.closed",
+    "source_id": "timeline:36427713749",
+    "observed_at": "2026-11-17T16:18:01.104Z",
+    "occurred_at": "2026-11-17T16:17:46Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 36427713749,
+      "event": "closed"
+    }
+  },
+  {
+    "subscription_id": "sub_58acb820-9b97-48a0-9a71-7d81b49293fe",
+    "seq": 4,
+    "event_id": "evt_4f9296f96210a313cf9605c7fa650ece206c9c12b4cab3cc27aeaa63f64eb9f5",
+    "type": "issue.reopened",
+    "source_id": "timeline:36427773656",
+    "observed_at": "2026-11-17T16:18:29.649Z",
+    "occurred_at": "2026-11-17T16:18:18Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 36427773656,
+      "event": "reopened"
+    }
+  },
+  {
+    "subscription_id": "sub_49be4fcf-e4a0-44e7-93ff-d6fdb8e71a66",
+    "seq": 5,
+    "event_id": "evt_667b013d9e68afadce77ff7cbab49f50223a152bad93c89a10e7e59a763138bd",
+    "type": "issue.comment.created",
+    "source_id": "comment:6953863958",
+    "observed_at": "2026-11-17T16:19:00.724Z",
+    "occurred_at": "2026-11-17T16:18:51Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953863958,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953863958",
+      "body": {
+        "bytes": 78,
+        "sha256": "81509ec35075e310302567e019afb274bedcc6533df959a6886b92a92be20f6c"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_49be4fcf-e4a0-44e7-93ff-d6fdb8e71a66",
+    "seq": 6,
+    "event_id": "evt_c6af04d90d33ff199983a58afdeb76110a6bd9332d4e5c611f798dc6c0a3738f",
+    "type": "issue.comment.created",
+    "source_id": "comment:6953877690",
+    "observed_at": "2026-11-17T16:19:29.411Z",
+    "occurred_at": "2026-11-17T16:19:23Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953877690,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953877690",
+      "body": {
+        "bytes": 76,
+        "sha256": "c42fd228359abc268605355b358d213ab64418848f3f90c2ed125fe5372df8a3"
+      }
+    }
+  },
+  {
+    "stream_events": [
+      {
+        "event": {
+          "event_id": "evt_c6af04d90d33ff199983a58afdeb76110a6bd9332d4e5c611f798dc6c0a3738f",
+          "type": "issue.comment.created",
+          "repository": "esonhugh/github-claude-channel",
+          "subject": {
+            "host": "github.com",
+            "repo": "esonhugh/github-claude-channel",
+            "kind": "issue",
+            "number": 2,
+            "events": [
+              "comments",
+              "lifecycle"
+            ]
+          },
+          "observed_at": "2026-11-17T16:19:29.411Z"
+        },
+        "deliveries": [
+          {
+            "watch_id": "watch_8d6e5ded-398d-4042-bd8d-0ad67329a2f8",
+            "subscription_id": "sub_49be4fcf-e4a0-44e7-93ff-d6fdb8e71a66",
+            "seq": 6
+          }
+        ],
+        "summary_sha256": "91445ec67b0327ef56bd07b336e9f0c3dddaa62bee23dda9b633228d13367f48"
+      }
+    ]
+  },
+  {
+    "subscription_id": "sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0",
+    "seq": 1,
+    "event_id": "evt_e11028d5cb6476f7f1b8acb3ea28ee6edac5daed09271ec9b522d6419b83add6",
+    "type": "pr.comment.created",
+    "source_id": "comment:6953907737",
+    "observed_at": "2026-11-17T16:21:07.929Z",
+    "occurred_at": "2026-11-17T16:20:33Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 6953907737,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#issuecomment-6953907737",
+      "body": {
+        "bytes": 77,
+        "sha256": "49c89d0eae87817661b4ae289dda88a58b8c91ea73805b534c34637bf399fc05"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0",
+    "seq": 2,
+    "event_id": "evt_9fa691de1058bdd5c24eb04c23b05ef1475edea9f5fc337308cd163aa4e1d8ec",
+    "type": "pr.review.submitted",
+    "source_id": "review:5942256748",
+    "observed_at": "2026-11-17T16:22:09.028Z",
+    "occurred_at": "2026-11-17T16:21:34Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 5942256748,
+      "state": "COMMENTED",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#pullrequestreview-5942256748",
+      "body": {
+        "bytes": 100,
+        "sha256": "a28ca5f438a7d4a33425afb4a8a2623bfc32015c07c52c5d620e97a88514cb3d"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0",
+    "seq": 4,
+    "event_id": "evt_f052b0c5501e6fa6343cfa069cecbafa1005536332f3faad1296e15f29d90481",
+    "type": "pr.review_comment.created",
+    "source_id": "review_comment:4602453184",
+    "observed_at": "2026-11-17T16:23:07.076Z",
+    "occurred_at": "2026-11-17T16:22:38Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 4602453184,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#discussion_r4602453184",
+      "path": "validation-fixture.txt",
+      "line": 1,
+      "side": "RIGHT",
+      "body": {
+        "bytes": 68,
+        "sha256": "2156cffa3cd5f685b74d82dc2e865d93fc1a9ec4167e389e11f840e044716f04"
+      }
+    }
+  },
+  {
+    "subscription_id": "sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0",
+    "seq": 5,
+    "event_id": "evt_ff62b17dcbfdc58288395cebebf715813b513464b188903d371e558c4af10698",
+    "type": "pr.closed",
+    "source_id": "timeline:36428294018",
+    "observed_at": "2026-11-17T16:23:38.408Z",
+    "occurred_at": "2026-11-17T16:23:10Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 36428294018,
+      "event": "closed"
+    }
+  },
+  {
+    "subscription_id": "sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0",
+    "seq": 6,
+    "event_id": "evt_acab48fb9ffedc18472b60ead8399d29431146a536cdc1ef97dbc7d976fa92e0",
+    "type": "pr.reopened",
+    "source_id": "timeline:36428350020",
+    "observed_at": "2026-11-17T16:24:06.935Z",
+    "occurred_at": "2026-11-17T16:23:42Z",
+    "evidence": "source_record",
+    "data": {
+      "id": 36428350020,
+      "event": "reopened"
+    }
+  },
+  {
+    "subscription_id": "sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79",
+    "seq": 3,
+    "event_id": "evt_9735a6812bd1b87710ba26fd1199baf382b9b6d07e422a231ac3ebc9fc34630a",
+    "type": "actions.run.completed",
+    "source_id": "run:44125363066:attempt:1",
+    "observed_at": "2026-11-17T16:27:09.342Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "id": 44125363066,
+      "status": "completed",
+      "conclusion": "success",
+      "run_attempt": 1,
+      "event": "workflow_dispatch",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125363066",
+      "path": ".github/workflows/channel-validation.yml"
+    }
+  },
+  {
+    "subscription_id": "sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79",
+    "seq": 4,
+    "event_id": "evt_88cb8bf85790cd578002f1114344bd1cff095addb59fb462bb256b8e6226bed1",
+    "type": "actions.job.changed",
+    "source_id": "run:44125363066:attempt:1/job:134187559078",
+    "observed_at": "2026-11-17T16:27:09.342Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "id": 134187559078,
+      "status": "completed",
+      "conclusion": "success",
+      "run_attempt": 1,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125363066/job/134187559078"
+    }
+  },
+  {
+    "subscription_id": "sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79",
+    "seq": 1,
+    "event_id": "evt_7f8e0e449ece5af0346e742130e48c12373f105d619ebb9dcd45e510e11a8b3f",
+    "type": "actions.step.changed",
+    "source_id": "run:44125363066:attempt:1/job:134187559078/step:8",
+    "observed_at": "2026-11-17T16:26:10.709Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "number": 8,
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  {
+    "subscription_id": "sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef",
+    "seq": 3,
+    "event_id": "evt_5ed796df830a31090ace82a7966d097261b9e8b0c471c4900ce541dda5acd66e",
+    "type": "actions.run.completed",
+    "source_id": "run:44125966878:attempt:1",
+    "observed_at": "2026-11-17T16:30:11.513Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "id": 44125966878,
+      "status": "completed",
+      "conclusion": "failure",
+      "run_attempt": 1,
+      "event": "workflow_dispatch",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125966878",
+      "path": ".github/workflows/channel-validation.yml"
+    }
+  },
+  {
+    "subscription_id": "sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef",
+    "seq": 4,
+    "event_id": "evt_41fcf50ba70999b445e4adc389c784ac65651a4c38a7626b00c01dff280e1fed",
+    "type": "actions.job.changed",
+    "source_id": "run:44125966878:attempt:1/job:134189711228",
+    "observed_at": "2026-11-17T16:30:11.513Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "id": 134189711228,
+      "status": "completed",
+      "conclusion": "failure",
+      "run_attempt": 1,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125966878/job/134189711228"
+    }
+  },
+  {
+    "subscription_id": "sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef",
+    "seq": 1,
+    "event_id": "evt_d300bfee7d82dc041a6703bc24c91c7521d0aaf8ae64c5f401fb71aa59ebd2cc",
+    "type": "actions.step.changed",
+    "source_id": "run:44125966878:attempt:1/job:134189711228/step:8",
+    "observed_at": "2026-11-17T16:29:40.176Z",
+    "occurred_at": null,
+    "evidence": "snapshot_diff",
+    "data": {
+      "number": 8,
+      "status": "completed",
+      "conclusion": "success"
+    }
+  }
+]

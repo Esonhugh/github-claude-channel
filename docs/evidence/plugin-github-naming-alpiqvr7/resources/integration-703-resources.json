@@ -1,0 +1,37 @@
+{
+  "pid": 703,
+  "stdout": "",
+  "stderr": "",
+  "socket": "/tmp/ghc-502-a8477e0dd81230021d59.sock",
+  "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-test-uG7Jog",
+  "adapter_pids": [
+    722
+  ],
+  "stream_pids": [
+    727
+  ],
+  "gh_pids": [
+    723,
+    724,
+    725,
+    726,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739,
+    740,
+    741,
+    742,
+    743
+  ],
+  "reclaimed": true,
+  "remaining_pids": []
+}

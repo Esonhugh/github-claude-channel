@@ -1,0 +1,137 @@
+{
+  "method": "Readable txt views strip only trailing space/tab/CR padding and blank EOF lines, retaining final LF. Original bytes are preserved losslessly in adjacent .raw.gz files; no verdict, event ID, text content, or ANSI interior was rewritten.",
+  "entries": [
+    {
+      "view": "build.txt",
+      "raw_gzip": "build.txt.raw.gz",
+      "raw_sha256": "8e603fc35361df95b16a737c81f4cd967f74aa86db98a39cb47db5368cad4357",
+      "view_sha256": "7342454e00489decd0bc91abdfda12e900fe8f0e7100e95ce7c7d9e03d9371d7"
+    },
+    {
+      "view": "host-20261117/02-subscribe-pane.txt",
+      "raw_gzip": "host-20261117/02-subscribe-pane.txt.raw.gz",
+      "raw_sha256": "958c4cb49f34e90ef9828fc6b222008a0ab589f7b893fed5ebb7735939ab362b",
+      "view_sha256": "5564c5a782611e9c6a43b9cb30e93406dfca3dea5030769f5019b378e11537bd"
+    },
+    {
+      "view": "host-20261117/01-list-pane.txt",
+      "raw_gzip": "host-20261117/01-list-pane.txt.raw.gz",
+      "raw_sha256": "1a121733495852ac872ca71a20d4e95697dc7d6a169f71f7778a03910fb754ca",
+      "view_sha256": "dbbcbc28dbefbc811f98db18258729b03d2055835b4676f1dfbd87ae5a4147c2"
+    },
+    {
+      "view": "host-20261117/05-detached-pane.txt",
+      "raw_gzip": "host-20261117/05-detached-pane.txt.raw.gz",
+      "raw_sha256": "5d34a1b5ab40675c9fa2097537197d1f85473be90d956d2b81d1a33f341c5303",
+      "view_sha256": "ed040f994d3f40e504546ee052e9b04395b819f08492b6a0df18e64b8bb76de5"
+    },
+    {
+      "view": "host-20261117/03-channel-pane.txt",
+      "raw_gzip": "host-20261117/03-channel-pane.txt.raw.gz",
+      "raw_sha256": "c11900548c6139f225f48c04fc3d3e6d57712a2856e3155bcf86479d91e16d9a",
+      "view_sha256": "1a7c7f9e00b3f31b31d5b6c599e659a8243c790f14911782a777d95462525a78"
+    },
+    {
+      "view": "host-20261117/04-monitor-pane.txt",
+      "raw_gzip": "host-20261117/04-monitor-pane.txt.raw.gz",
+      "raw_sha256": "438961a0d7530a8e8f8508ea0f4ca24c1090dbd7fca3466454c478a2840f96db",
+      "view_sha256": "38b3ae5fd91efc5517b7b9c3dbd2b99ae8ccb3aec6c427276e54e3e88ff41515"
+    },
+    {
+      "view": "host-20261117/06-unsubscribe-pane.txt",
+      "raw_gzip": "host-20261117/06-unsubscribe-pane.txt.raw.gz",
+      "raw_sha256": "7c2fac1ad095a7befeba6effe3e6d495b187eca134c0106fe499e281fb6a3827",
+      "view_sha256": "0795940b623f0fdfe7bd77b7323cc9685a5392dc0704930a1ed809ece836dc2f"
+    },
+    {
+      "view": "marketplace-github-20261117/04-auth-fixture-failure-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/04-auth-fixture-failure-pane.txt.raw.gz",
+      "raw_sha256": "7cacc98317e6a1f3491fba29db83dfe999894af3cee67eefe791e956680f3d6b",
+      "view_sha256": "532a1da469b691c6c5dc5b5a1709e7d0d4ddef09980ecc67199e24d73dc7b0e6"
+    },
+    {
+      "view": "marketplace-github-20261117/01-marketplace-add-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/01-marketplace-add-pane.txt.raw.gz",
+      "raw_sha256": "4ebc7c361b226906f1206f92f0864f71525fc6b503319a6584c462b1490e7f69",
+      "view_sha256": "cbc3ae519e232d31fe527c02ca8dcd5e087e19c03a5352295a90d33d48dc0a66"
+    },
+    {
+      "view": "marketplace-github-20261117/06-real-channel-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/06-real-channel-pane.txt.raw.gz",
+      "raw_sha256": "86eb4d98af84634a4db58ba3a218f01cf51d3fa7924deeb9dfb6b9f9773cde9f",
+      "view_sha256": "db744f579d466577a76132b4057c55a448496782b12fbf138d28bf204726bc56"
+    },
+    {
+      "view": "marketplace-github-20261117/05-subscribe-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/05-subscribe-pane.txt.raw.gz",
+      "raw_sha256": "7e53a32ec3d69ff1414dccff20b92130a8b762ca564b4c7ad40d625595694a11",
+      "view_sha256": "eb5e562415919d58f0aec95edf8a67af62624ce33206d4aa40ed3f046046da1d"
+    },
+    {
+      "view": "marketplace-github-20261117/07-unsubscribe-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/07-unsubscribe-pane.txt.raw.gz",
+      "raw_sha256": "7c8a7eac555ae0f31c3906a84beeeb4c10978a3ebe0930bb23022eef6d42badd",
+      "view_sha256": "695a85cfd46224c3db21916d6e357044afb7c5a499a7c4e0bf3390fa741bc1e0"
+    },
+    {
+      "view": "marketplace-github-20261117/03-reload-list-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/03-reload-list-pane.txt.raw.gz",
+      "raw_sha256": "7431358fb7840b66d7e0fb8672d69748732c082cf91b98b59690243db0b87059",
+      "view_sha256": "f0658e84fff3f76d5a35f7156b9203ea54393790b3ca9791245a2f46cff86703"
+    },
+    {
+      "view": "marketplace-github-20261117/02-install-pane.txt",
+      "raw_gzip": "marketplace-github-20261117/02-install-pane.txt.raw.gz",
+      "raw_sha256": "6c36ee08158f516de51cc414001850d0360a29941276b62caf18a96194115e77",
+      "view_sha256": "a89301df1d08b68d899953a4c6dd74a263d51673b62f80f7aa297d62d498fa98"
+    },
+    {
+      "view": "plugin-github-naming-alpiqvr7/packaging-red.txt",
+      "raw_gzip": "plugin-github-naming-alpiqvr7/packaging-red.txt.raw.gz",
+      "raw_sha256": "908941fac1d872f88a2440692eae8aeb8c2edd9c4101bf7658748bf22284b1bb",
+      "view_sha256": "29598aa27f7396539bdc59a091b4a951683f8f337332f25aa37155de4ffea1e6"
+    },
+    {
+      "view": "plugin-github-naming-alpiqvr7/build.txt",
+      "raw_gzip": "plugin-github-naming-alpiqvr7/build.txt.raw.gz",
+      "raw_sha256": "cba09b55516d62875b79334dcf87bd6a7e2ad3109920a10fc6037337f4db32f3",
+      "view_sha256": "3a2f71fd94e246cdf7073e461ada51007912ae93427f243760f471a166339845"
+    },
+    {
+      "view": "host-live-20261117/01-subscribe-pane.txt",
+      "raw_gzip": "host-live-20261117/01-subscribe-pane.txt.raw.gz",
+      "raw_sha256": "9b3931d38566f7ebd03e1a9343049c42ce3c7543fe80cd2027e693c6eb329305",
+      "view_sha256": "7633517044fbc1ad8161183404bfc2f80f2330f3444dd3bb23b94e0dd7fb5ae1"
+    },
+    {
+      "view": "host-live-20261117/03-monitor-pane.txt",
+      "raw_gzip": "host-live-20261117/03-monitor-pane.txt.raw.gz",
+      "raw_sha256": "4f4fc27e9b0b7f93a63a3c89c5419fa569a3b5c885cba178316de1a8186c8761",
+      "view_sha256": "235562c96e576c2de4785d78fcfeacd8128ccf3149225d2c0a9b417262fed9d7"
+    },
+    {
+      "view": "host-live-20261117/05-unsubscribe-pane.txt",
+      "raw_gzip": "host-live-20261117/05-unsubscribe-pane.txt.raw.gz",
+      "raw_sha256": "24478e74d39246db897fcafc0234a90ca183d4481bb42e131afb5cd39a6188c9",
+      "view_sha256": "982ef42cfe56c5bbd02c5f71b92e91b409161e01dcd804df1e28f43d6cffd18c"
+    },
+    {
+      "view": "host-live-20261117/00-auth-isolation-failure-pane.txt",
+      "raw_gzip": "host-live-20261117/00-auth-isolation-failure-pane.txt.raw.gz",
+      "raw_sha256": "7511d25d3bd4e9beb359c888c950ef5ef5b0f04db26e18b808c42c1c89061ea9",
+      "view_sha256": "0460e3dcf6e3b91f8eae1b630a6d275bc9ed346fec0691ea07558d22e63e93fd"
+    },
+    {
+      "view": "host-live-20261117/04-events-and-detached-pane.txt",
+      "raw_gzip": "host-live-20261117/04-events-and-detached-pane.txt.raw.gz",
+      "raw_sha256": "a4820b4e63bd308b5d140287165ec8bb8e963a09c96143482dca775dc8a4b9ed",
+      "view_sha256": "c04c32d3529d5b089b4b95aca016c98c39eb4da1ff576957478b8d55bc6fba52"
+    },
+    {
+      "view": "host-live-20261117/02-channel-pane.txt",
+      "raw_gzip": "host-live-20261117/02-channel-pane.txt.raw.gz",
+      "raw_sha256": "c96ac626dbfe7bb56ba6de1ac49c1446f7160bba242958a2cf637866794ffa50",
+      "view_sha256": "b28d71ae3c4c770aadd8898ebf1c2b7dd8208ec0c9398e2494c189241a0089fb"
+    }
+  ]
+}

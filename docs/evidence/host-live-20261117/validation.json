@@ -1,0 +1,53 @@
+{
+  "term_target": "term-4",
+  "host_pid": 87627,
+  "provider_pid": 87405,
+  "repository": "Esonhugh/github-claude-channel",
+  "issue": 3,
+  "proxy": "http://127.0.0.1:7890",
+  "poll_ms": 30000,
+  "github_source": "real gh/API, not fixture",
+  "model": "deterministic loopback SSE fixture; not language understanding evidence",
+  "credential_handling": "Only gh subprocess retains original HOME for existing auth; Claude HOME remains isolated. No credential values copied or printed.",
+  "attempts": [
+    {
+      "term_target": "term-3",
+      "verdict": "not covered",
+      "reason": "isolated HOME plus GH_CONFIG_DIR override failed /user with HTTP401; original gh HOME comparison authenticated; retry uses gh-only HOME mapping"
+    }
+  ],
+  "assertions": [
+    {
+      "id": "real-github-channel",
+      "verdict": "passed",
+      "comment_id": "6954240894",
+      "event_id": "evt_996bc901aada32f121d86b40353004e9d398f7b3165fde28dd2766994ea2df4c"
+    },
+    {
+      "id": "real-github-monitor",
+      "verdict": "passed",
+      "task_id": "b1l1btj2p",
+      "comment_id": "6954292191",
+      "event_id": "evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379"
+    },
+    {
+      "id": "ack-and-single-lease",
+      "verdict": "passed",
+      "acked_first_event_before_fallback": true
+    },
+    {
+      "id": "unsubscribe-empty",
+      "verdict": "passed"
+    },
+    {
+      "id": "fixture-closed",
+      "verdict": "passed"
+    },
+    {
+      "id": "cleanup",
+      "verdict": "passed"
+    }
+  ],
+  "remaining_known_pids": [],
+  "remaining_sockets": []
+}

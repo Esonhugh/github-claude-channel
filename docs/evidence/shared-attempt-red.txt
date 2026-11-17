@@ -1,0 +1,23 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/store.test.ts:
+145 |   const pending=sample({[prefix]:{status:'completed',conclusion:'success'},[prefix+'/job:8']:{status:'in_progress'},[prefix+'/job:8/step:1']:{status:'in_progress'}})
+146 |   pending.meta={action_events:['job','step']}
+147 |   s.register(consumer.id,rule,new Map([[key,pending]]))
+148 |   const narrow=normalizeSubscription({targets:[{kind:'run',repo:'o/r',run_id:'3',attempt:1,events:['run']}]})
+149 |   s.register(consumer.id,narrow,new Map([[key,pending]]))
+150 |   expect(s.get('SELECT next_poll FROM targets WHERE key=?',key).next_poll).toBeLessThan(Number.MAX_SAFE_INTEGER)
+                                                                                 ^
+error: expect(received).toBeLessThan(expected)
+
+Expected: < 9007199254740991
+Received: 9007199254740991
+
+      at <anonymous> (/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/tests/store.test.ts:150:76)
+(fail) adding a run-only watch cannot finalize a shared attempt with still-running requested steps [11.18ms]
+
+ 0 pass
+ 10 filtered out
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [50.00ms]

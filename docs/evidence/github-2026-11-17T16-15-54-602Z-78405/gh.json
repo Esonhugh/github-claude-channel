@@ -1,0 +1,791 @@
+[
+  {
+    "at": "2026-11-17T16:16:00.286Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "title": "[channel smoke] github-channel-smoke-2026-11-17T16-15-54-602Z-78405",
+      "body": "Automated fixture for Esonhugh/github-claude-channel. Marker: github-channel-smoke-2026-11-17T16-15-54-602Z-78405. This issue will be closed, not deleted."
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 4282,
+    "stdout_sha256": "d9edc078211295da433c4b3d880f57b5a200ec6f72a042eae559a70f94942789",
+    "output_summary": {
+      "id": 6448924685,
+      "number": 2,
+      "state": "open",
+      "type": null,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2",
+      "body": {
+        "bytes": 154,
+        "sha256": "e62a808e5b652d4435297ffa2a34ec213aa71eb88403ab37afb5dbebfe3a631e"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:16:43.056Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2/comments",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] comment creation"
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 3282,
+    "stdout_sha256": "912397e5919c611b3c8622dd1a52fb3e676b011cfe55853ec31c9899167a8c2c",
+    "output_summary": {
+      "id": 6953807070,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953807070",
+      "body": {
+        "bytes": 70,
+        "sha256": "9e18c3280c37b7b14739560f8da9177163d8613005a485a1cbf9ba1bf8fff267"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:17:14.869Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/comments/6953807070",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] comment edited"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 3115,
+    "stdout_sha256": "7cb4c847b1a6afe1f17ec32f3804aea945baa198ef0c20f8a374edf0147ccb5b",
+    "output_summary": {
+      "id": 6953807070,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953807070",
+      "body": {
+        "bytes": 68,
+        "sha256": "adb9277c7a400d1931029db86eaaff577d595d6c7d9f014d5057a9bb4e1f6973"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:17:46.892Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "closed",
+      "state_reason": "completed"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 5135,
+    "stdout_sha256": "cf92435c0f92644c39618627d8fe971d4fb957ef94b13348ae3a8a98ccd251c5",
+    "output_summary": {
+      "id": 6448924685,
+      "number": 2,
+      "state": "closed",
+      "type": null,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2",
+      "body": {
+        "bytes": 154,
+        "sha256": "e62a808e5b652d4435297ffa2a34ec213aa71eb88403ab37afb5dbebfe3a631e"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:18:19.049Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "open"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 4184,
+    "stdout_sha256": "69ae2feee2a2fa6472637b749b89078d1747f0646e36affe595541699652b369",
+    "output_summary": {
+      "id": 6448924685,
+      "number": 2,
+      "state": "open",
+      "type": null,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2",
+      "body": {
+        "bytes": 154,
+        "sha256": "e62a808e5b652d4435297ffa2a34ec213aa71eb88403ab37afb5dbebfe3a631e"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:18:52.033Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2/comments",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] B survives A unsubscribe"
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 3292,
+    "stdout_sha256": "ac3ca96d5baf16658de10ae0ff6dbe7d8d1e238703c3b41bf0a7772810e1c539",
+    "output_summary": {
+      "id": 6953863958,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953863958",
+      "body": {
+        "bytes": 78,
+        "sha256": "81509ec35075e310302567e019afb274bedcc6533df959a6886b92a92be20f6c"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:19:24.041Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2/comments",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] Monitor fallback event"
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 3291,
+    "stdout_sha256": "f6987a4acb4c6be3a4613a46cb8642135239657057cc650b6eea02991ccd21e8",
+    "output_summary": {
+      "id": 6953877690,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2#issuecomment-6953877690",
+      "body": {
+        "bytes": 76,
+        "sha256": "c42fd228359abc268605355b358d213ab64418848f3f90c2ed125fe5372df8a3"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:20:24.552Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 18331,
+    "stdout_sha256": "139dd4df4c14abfd8c9acb78114df65fe9d250fccd64f3f0d8820d173389fee8",
+    "output_summary": {
+      "id": 5360558127,
+      "number": 1,
+      "state": "open",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1",
+      "body": {
+        "bytes": 145,
+        "sha256": "392b00a002cfa749d401a70f0ba189ea85afec2a73d8bd7bec14c6b06b5775af"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:20:33.404Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/1/comments",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] PR conversation comment"
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 3288,
+    "stdout_sha256": "8493f76e959f5a9cf1eafeb402e041486f492304e91aa39ac41409a8ed32f2b8",
+    "output_summary": {
+      "id": 6953907737,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#issuecomment-6953907737",
+      "body": {
+        "bytes": 77,
+        "sha256": "49c89d0eae87817661b4ae289dda88a58b8c91ea73805b534c34637bf399fc05"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:21:35.079Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1/reviews",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "event": "COMMENT",
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] Review fixture; no approval or change request."
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 3147,
+    "stdout_sha256": "b4cc093c176010f458248bacecb22fdd4c13bfeaeac60125be14bf0ec26761a6",
+    "output_summary": {
+      "id": 5942256748,
+      "state": "COMMENTED",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#pullrequestreview-5942256748",
+      "body": {
+        "bytes": 100,
+        "sha256": "a28ca5f438a7d4a33425afb4a8a2623bfc32015c07c52c5d620e97a88514cb3d"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:22:36.558Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1/files?per_page=100"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 2126,
+    "stdout_sha256": "5f707f38c4ea44cfaad1781552c35cbc6efb3688bce01aa18f6f228f12302e5b",
+    "output_summary": {
+      "count": 1,
+      "items": [
+        {
+          "status": "added"
+        }
+      ]
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:22:38.679Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1/comments",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "body": "[github-channel-smoke-2026-11-17T16-15-54-602Z-78405] Inline fixture",
+      "commit_id": "272a29a09b754b95e851e7aa8a79aac59f46ec08",
+      "path": "validation-fixture.txt",
+      "line": 1,
+      "side": "RIGHT"
+    },
+    "exit_code": 0,
+    "status": 201,
+    "stdout_bytes": 3967,
+    "stdout_sha256": "c9c80cce572be70b2f4da3ec100619a55c5da98015b8174d1242d5e0e512ff6d",
+    "output_summary": {
+      "id": 4602453184,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1#discussion_r4602453184",
+      "path": "validation-fixture.txt",
+      "line": 1,
+      "side": "RIGHT",
+      "body": {
+        "bytes": 68,
+        "sha256": "2156cffa3cd5f685b74d82dc2e865d93fc1a9ec4167e389e11f840e044716f04"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:23:10.726Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "closed"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 18257,
+    "stdout_sha256": "df928958c33dcb59528993dea32220357c226c5796d962f14bafaada7fceba1b",
+    "output_summary": {
+      "id": 5360558127,
+      "number": 1,
+      "state": "closed",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1",
+      "body": {
+        "bytes": 145,
+        "sha256": "392b00a002cfa749d401a70f0ba189ea85afec2a73d8bd7bec14c6b06b5775af"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:23:42.722Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "open"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 18204,
+    "stdout_sha256": "f460b96fe8c087fb158a75b7b2cefabc283777ee9e292063bd2ea8e466983297",
+    "output_summary": {
+      "id": 5360558127,
+      "number": 1,
+      "state": "open",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1",
+      "body": {
+        "bytes": 145,
+        "sha256": "392b00a002cfa749d401a70f0ba189ea85afec2a73d8bd7bec14c6b06b5775af"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:24:13.905Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 1947,
+    "stdout_sha256": "4657da88f37f603d9ba2e124ef54355807d01d7d132d2ee1878902f27ed16129",
+    "output_summary": {
+      "id": 421562931,
+      "state": "active",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/blob/Skyworship/.github/workflows/channel-validation.yml",
+      "path": ".github/workflows/channel-validation.yml"
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:24:16.306Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/dispatches",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "ref": "validation/channel-events-20261117",
+      "inputs": {
+        "outcome": "success",
+        "marker": "github-channel-smoke-2026-11-17T16-15-54-602Z-78405-success"
+      }
+    },
+    "exit_code": 0,
+    "status": 204,
+    "stdout_bytes": 1379,
+    "stdout_sha256": "7cb85544555309f148548040ccdd1c44eacac5fd8bcdc5af8cfecf20d58d9b62",
+    "output_summary": null,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:24:17.523Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/runs?event=workflow_dispatch&branch=validation%2Fchannel-events-20261117&per_page=100"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 1429,
+    "stdout_sha256": "9436afadc4ed73764694a23493146cc2b3832e6aa3e9a152b6f5fa82ac83ff74",
+    "output_summary": {
+      "total_count": 0,
+      "workflow_runs": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:24:49.068Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/runs?event=workflow_dispatch&branch=validation%2Fchannel-events-20261117&per_page=100"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 15318,
+    "stdout_sha256": "76c47e4704e450ebd7f9e13f6cd11efc261c643ecf3fe4d0658e711e8ea2da3f",
+    "output_summary": {
+      "total_count": 1,
+      "workflow_runs": {
+        "count": 1,
+        "items": [
+          {
+            "id": 44125363066,
+            "status": "in_progress",
+            "conclusion": null,
+            "run_attempt": 1,
+            "event": "workflow_dispatch",
+            "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125363066",
+            "path": ".github/workflows/channel-validation.yml"
+          }
+        ]
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:27:25.178Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "POST",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/dispatches",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "ref": "validation/channel-events-20261117",
+      "inputs": {
+        "outcome": "failure",
+        "marker": "github-channel-smoke-2026-11-17T16-15-54-602Z-78405-failure"
+      }
+    },
+    "exit_code": 0,
+    "status": 204,
+    "stdout_bytes": 1380,
+    "stdout_sha256": "756c05f6e17444e8266249a7ead70d5758cbbbaaa18ad33dc7f2ab9bcbdae72d",
+    "output_summary": null,
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:27:26.508Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/runs?event=workflow_dispatch&branch=validation%2Fchannel-events-20261117&per_page=100"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 15322,
+    "stdout_sha256": "21ba930b481c37547fb74041f85b9169a0c70c6cae76665030aa7d56d8cbda38",
+    "output_summary": {
+      "total_count": 1,
+      "workflow_runs": {
+        "count": 1,
+        "items": [
+          {
+            "id": 44125363066,
+            "status": "completed",
+            "conclusion": "success",
+            "run_attempt": 1,
+            "event": "workflow_dispatch",
+            "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125363066",
+            "path": ".github/workflows/channel-validation.yml"
+          }
+        ]
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:27:57.732Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "GET",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/actions/workflows/channel-validation.yml/runs?event=workflow_dispatch&branch=validation%2Fchannel-events-20261117&per_page=100"
+    ],
+    "input": null,
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 29210,
+    "stdout_sha256": "1395ae216db7d01af2f3d68d0492d0a082c9f7c0a3129c44886d7e98a5f1525f",
+    "output_summary": {
+      "total_count": 2,
+      "workflow_runs": {
+        "count": 2,
+        "items": [
+          {
+            "id": 44125966878,
+            "status": "in_progress",
+            "conclusion": null,
+            "run_attempt": 1,
+            "event": "workflow_dispatch",
+            "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125966878",
+            "path": ".github/workflows/channel-validation.yml"
+          },
+          {
+            "id": 44125363066,
+            "status": "completed",
+            "conclusion": "success",
+            "run_attempt": 1,
+            "event": "workflow_dispatch",
+            "html_url": "https://github.com/Esonhugh/github-claude-channel/actions/runs/44125363066",
+            "path": ".github/workflows/channel-validation.yml"
+          }
+        ]
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:30:16.004Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/issues/2",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "closed"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 5136,
+    "stdout_sha256": "689e8dee09f3eec41d733ef84071183ee0cae5516fbaadcf746b84c28ec26861",
+    "output_summary": {
+      "id": 6448924685,
+      "number": 2,
+      "state": "closed",
+      "type": null,
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/issues/2",
+      "body": {
+        "bytes": 154,
+        "sha256": "e62a808e5b652d4435297ffa2a34ec213aa71eb88403ab37afb5dbebfe3a631e"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "at": "2026-11-17T16:30:17.727Z",
+    "argv": [
+      "gh",
+      "api",
+      "--hostname",
+      "github.com",
+      "--method",
+      "PATCH",
+      "--include",
+      "repos/Esonhugh/github-claude-channel/pulls/1",
+      "--input",
+      "-"
+    ],
+    "input": {
+      "state": "open"
+    },
+    "exit_code": 0,
+    "status": 200,
+    "stdout_bytes": 18240,
+    "stdout_sha256": "274a5228e346b3a84a4ddd5b576accbfd0fc15e71d6140c006338483f37e6437",
+    "output_summary": {
+      "id": 5360558127,
+      "number": 1,
+      "state": "open",
+      "html_url": "https://github.com/Esonhugh/github-claude-channel/pull/1",
+      "body": {
+        "bytes": 145,
+        "sha256": "392b00a002cfa749d401a70f0ba189ea85afec2a73d8bd7bec14c6b06b5775af"
+      }
+    },
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  }
+]

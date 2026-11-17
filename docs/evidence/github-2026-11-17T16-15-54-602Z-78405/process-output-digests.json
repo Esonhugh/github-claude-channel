@@ -1,0 +1,27 @@
+[
+  {
+    "label": "monitor-cli",
+    "bytes": 100,
+    "sha256": "6951a74dc99a673c0626672384ef60112e8e9e487bdcd7ff82a69e5a70ad1f99"
+  },
+  {
+    "label": "daemon-stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "daemon-stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "adapter-a",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "adapter-b",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

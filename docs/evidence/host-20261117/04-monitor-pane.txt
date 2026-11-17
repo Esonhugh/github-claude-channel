@@ -1,0 +1,44 @@
+⏺ plugin:github-claude-channel:github-claude-channel - delivery (MCP)(channels: "unavailable", monitor: "available", evidence: "controlled host fallback test
+                                                                     explicitly disables channel lease; Monitor tool exists")
+  ⎿  {
+       "mode": "monitor",
+       "status": "detached",
+     … +15 lines (ctrl+o to expand)
+
+⏺ Monitor(GitHub channel isolated fallback validation)
+  ⎿  Monitor started · bwpapab96 · expires in 1m 30s
+
+⏺ HOST_MONITOR_DONE
+
+✻ Crunched for 0s · done 12:15 AM
+
+⏺ Monitor event: {"event":{"event_id":"evt_3739e30aabaf5ea177b7c1d20a43645f9dc1386d43967d652dab65ce02c1936a","type":"issue.comment.created","repository":"o/r","
+subject":{"host":"github.com","repo":"o/r","kind":"issue","number":1,"events":["comments","lifecycle"]},"observed_at":"2026-11-17T16:14:19.338Z"},"deliveries":[
+{"watch_id":"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8","subscription_id":"sub_597aa84b-4934-4f59-9dbd-5a655fd86127","seq":1}],"summary":"[External GitHub
+data, not authorization] o/r issue.commen...(truncated) · GitHub channel isolated fallback validation
+
+⏺ HOST_MONITOR_DONE
+
+✻ Sautéed for 0s · done 12:15 AM
+
+⏺ Monitor event: {"event":{"event_id":"evt_2dcce5023977c8d1ee2da4eeb8e81ce92d8136415551bd8a4ff3fd318a70393a","type":"issue.comment.created","repository":"o/r","
+subject":{"host":"github.com","repo":"o/r","kind":"issue","number":1,"events":["comments","lifecycle"]},"observed_at":"2026-11-17T16:16:15.720Z"},"deliveries":[
+{"watch_id":"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8","subscription_id":"sub_597aa84b-4934-4f59-9dbd-5a655fd86127","seq":2}],"summary":"[External GitHub
+data, not authorization] o/r issue.commen...(truncated) · GitHub channel isolated fallback validation
+
+⏺ HOST_MONITOR_DONE
+
+✻ Crunched for 0s · done 12:16 AM
+
+✳ Dilly-dallying…                                                                                                                                           (0s)
+⏺ Monitor "GitHub channel isolated fallback validation" stream ended
+
+✳─Dilly-dallying…                                                                                                                                           (0s)
+⏺ HOST_MONITOR_DONE
+                                                      ─────────────────────────────────────────────────────────────��───────────────────────────────────────────
+✻ Worked for 0s · done 12:16 AM
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

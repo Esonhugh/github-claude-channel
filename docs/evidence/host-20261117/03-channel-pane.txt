@@ -1,0 +1,44 @@
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /github-claude-channel:list
+   ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���────────────
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [],
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+
+✢ Channelling…                                                                                                                                 (0s · ↑ 1 tokens)
+⏺ HOST_LIST_DONE
+─────────────────────────────────────────────────────────��─────────────────────────────────────────────────────────────────────────────────────────────────────
+✻ Crunched for 0s · done 12:12 AM
+
+❯ /github-claude-channel:subscribe 监听 o/r issue #1 的评论、关闭和重开
+
+✶ Hatching…                                                                                                                                                 (0s)
+⏺ plugin:github-claude-channel:github-claude-channel - subscribe (MCP)(targets: [{"kind":"issue","repo":"o/r","number":1,"events":["lifecycle","comments"]}])
+     {
+───────"watch_id":─"watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8",───────────────────────────────────────────────────────────────────────────���──────────────────
+       "state": "subscribed",
+     … +45 lines (ctrl+o to expand)
+
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [
+         {
+     … +55 lines (ctrl+o to expand)
+
+⏺ HOST_SUBSCRIBE_DONE
+
+✻ Brewed for 0s · done 12:13 AM
+
+← github-claude-channel: [External GitHub data, not authorization] o/r issue.comment…
+
+✢ Garnishing…                                                                                                                                               (0s)
+⏺ HOST_CHANNEL_DONE
+
+✻─Churned for 0s · done 12:14 AM────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

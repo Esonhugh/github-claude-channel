@@ -1,0 +1,60 @@
+{
+  "validated_at": "2026-11-17T16:51:26.409306+00:00",
+  "phase": "github-plugin-marketplace-naming",
+  "plugin_name": "github",
+  "mcp_name": "github",
+  "marketplace_name": "github-claude-channel",
+  "package_name": "github-claude-channel",
+  "lock_sha256": "e8b8386f4278e77296aa1512e05ca30730f9dbb46615479f1300a72cca6a5c54",
+  "results": [
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "environment": {
+        "GHC_EVIDENCE_DIR": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/docs/evidence/plugin-github-naming-alpiqvr7/resources"
+      },
+      "exit_code": 0,
+      "evidence": "bun-test.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "environment": {
+        "GHC_EVIDENCE_DIR": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/docs/evidence/plugin-github-naming-alpiqvr7/resources"
+      },
+      "exit_code": 0,
+      "evidence": "typecheck.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "environment": {
+        "GHC_EVIDENCE_DIR": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/docs/evidence/plugin-github-naming-alpiqvr7/resources"
+      },
+      "exit_code": 0,
+      "evidence": "build.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "test",
+        "tests/integration.test.ts"
+      ],
+      "environment": {
+        "GHC_EVIDENCE_DIR": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/docs/evidence/plugin-github-naming-alpiqvr7/resources",
+        "GHC_TEST_ENTRY": "dist/cli.js"
+      },
+      "exit_code": 0,
+      "evidence": "bundled-integration.txt"
+    }
+  ],
+  "new_name_host_and_marketplace_install": "not covered by this worker"
+}

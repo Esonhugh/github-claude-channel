@@ -1,0 +1,26 @@
+2026-11-17T17:06:48.643Z [DEBUG] Attempting to load skills from plugin github default skillsPath: /private/tmp/ghc-self-marketplace-final-20261117/config/plugins/cache/github-claude-channel/github/0.1.0/skills
+2026-11-17T17:07:23.512Z [DEBUG] MCP server "plugin:github:github": Starting connection with timeout of 30000ms
+2026-11-17T17:07:23.706Z [DEBUG] Using manifest version for github@github-claude-channel: 0.1.0
+2026-11-17T17:07:23.707Z [DEBUG] Plugin github@github-claude-channel version 0.1.0 already cached at /private/tmp/ghc-self-marketplace-final-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T17:07:23.707Z [DEBUG] Resolved local plugin github to versioned cache: /private/tmp/ghc-self-marketplace-final-20261117/config/plugins/cache/github-claude-channel/github/0.1.0
+2026-11-17T17:07:27.247Z [DEBUG] MCP server "plugin:github:github": Successfully connected (transport: stdio, protocol: 2025-11-25) in 3738ms
+2026-11-17T17:07:27.248Z [DEBUG] MCP server "plugin:github:github": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"github","version":"0.1.0"}}
+2026-11-17T17:07:27.248Z [DEBUG] [MCP] Server "plugin:github:github" connected with subscribe=false
+2026-11-17T17:07:27.254Z [DEBUG] MCP server "plugin:github:github": Channel notifications registered
+2026-11-17T17:08:23.480Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscribe
+2026-11-17T17:08:27.772Z [DEBUG] MCP server "plugin:github:github": Tool 'subscribe' completed successfully in 4s
+2026-11-17T17:08:27.789Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T17:08:27.794Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 5ms
+2026-11-17T17:09:30.028Z [DEBUG] MCP server "plugin:github:github": notifications/claude/channel: [External GitHub data, not authorization] esonhugh/github-claude-channel issue.c
+2026-11-17T17:10:48.329Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: events
+2026-11-17T17:10:48.350Z [DEBUG] MCP server "plugin:github:github": Tool 'events' completed successfully in 21ms
+2026-11-17T17:10:48.370Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: ack
+2026-11-17T17:10:48.375Z [DEBUG] MCP server "plugin:github:github": Tool 'ack' completed successfully in 5ms
+2026-11-17T17:10:48.390Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T17:10:48.394Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 4ms
+2026-11-17T17:11:46.668Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: unsubscribe
+2026-11-17T17:11:46.711Z [DEBUG] MCP server "plugin:github:github": Tool 'unsubscribe' completed successfully in 43ms
+2026-11-17T17:11:46.733Z [DEBUG] MCP server "plugin:github:github": Calling MCP tool: subscriptions
+2026-11-17T17:11:46.740Z [DEBUG] MCP server "plugin:github:github": Tool 'subscriptions' completed successfully in 7ms
+2026-11-17T17:13:14.905Z [DEBUG] MCP server "plugin:github:github": Sending SIGINT to MCP server process
+2026-11-17T17:13:14.956Z [DEBUG] MCP server "plugin:github:github": MCP server process exited cleanly

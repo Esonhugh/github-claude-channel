@@ -129,4 +129,6 @@ gh host 限于 GHC_ALLOWED_HOSTS（默认 GH_HOST 或 github.com），避免恶�
 
 以上为本地自动化测试阶段的覆盖边界，不单独证明外部系统行为。协调方随后已补充 [真实 GitHub 验收](github-validation-results.md) 与 [参考 fork 宿主交互验收](host-validation.md)：实际 GitHub Issue/PR/Actions、SDK Channels/CLI stream、真实宿主插件装载、三个 skills、Channels 接收与 Monitor fallback 均有独立证据。
 
-剩余 **not covered**：官方 CLI parity、真实模型语言理解、通用宿主自动能力探测、显式宿主 Monitor TaskStop、Marketplace 安装发布、多机器/GHES，以及真实 GitHub merge/rerun 等未在远端矩阵执行的路径。详见各验收报告，不将模拟测试或宿主 fixture 冒充真实远端/模型证据。
+当前 github 命名与同仓库 marketplace 配置回归：源码 **31 pass / 0 fail**，打包入口 **10 pass / 0 fail**，typecheck/build 通过；原始结果独立保存在 [命名证据](evidence/plugin-github-naming-alpiqvr7/validation.json)，不覆盖前述历史记录。[安装验收](marketplace-validation.md) 已证明真实 GitHub marketplace add、根插件 install、reload、三个 skills、新名称 Channels 接收真实评论、退订与回收。
+
+剩余 **not covered**：官方 CLI parity、真实模型语言理解、通用宿主自动能力探测、显式宿主 Monitor TaskStop、外部 Esonhugh/Marketplace 发布、多机器/GHES，以及真实 GitHub merge/rerun 等未在远端矩阵执行的路径。详见各验收报告，不将模拟测试或宿主 fixture 冒充真实远端/模型证据。

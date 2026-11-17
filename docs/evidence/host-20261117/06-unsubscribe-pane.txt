@@ -1,0 +1,44 @@
+⏺ Monitor "GitHub channel isolated fallback validation" stream ended
+
+✳─Dilly-dallying…                                                                                                                                           (0s)
+⏺ HOST_MONITOR_DONE
+                                                      ─────────────────────────────────────────────────────────────��───────────────────────────────────────────
+✻ Worked for 0s · done 12:16 AM
+
+❯ /github-claude-channel:list
+
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [
+         {
+     … +55 lines (ctrl+o to expand)
+
+⏺ HOST_AFTER_MONITOR_DONE
+
+✻ Baked for 0s · done 12:16 AM
+
+❯ /github-claude-channel:unsubscribe watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8
+
+⏺ plugin:github-claude-channel:github-claude-channel - unsubscribe (MCP)(watch_id: "watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8")
+⏺ ⎿  Running…
+     {
+✳ Wibbl"watch_id": "watch_225bc1ee-8eee-47cb-9bf6-f0fe89df40a8",                                                                               (0s · ↓ 1 tokens)
+       "state": "unsubscribed"
+     }
+──────────────────────────────────────────────────────────────────────────────────────────────────���───────────────────────────────────────────────────────────
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+⏺ ⎿  Running…
+     {
+✳ Wibbl"watches": [],                                                                                                                          (0s · ↓ 2 tokens)
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+✳ Wibbling…                                                                                                                                    (0s · ↑ 3 tokens)
+⏺ HOST_UNSUBSCRIBE_DONE
+
+✻─Worked for 0s · done 12:17 AM───────────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

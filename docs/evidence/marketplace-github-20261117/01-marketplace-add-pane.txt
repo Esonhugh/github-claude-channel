@@ -1,0 +1,26 @@
+╭─── EsonClaw v2.1.297 ─────────────────────────────────────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting started                             │
+│                    Welcome back!                   │ Ask Claude to create a new app or clone a repository │
+│                                                    │ ──────────────────────────────────────────────────── │
+│                       ▐▛███▜▌                      │ Recent activity                                      │
+│                      ▝▜█████▛▘                     │ No recent activity                                   │
+│                        ▘▘ ▝▝                       │                                                      │
+│                                                    │                                                      │
+│            Opus 5.5 · API Usage Billing            │                                                      │
+│   /private/tmp/ghc-self-marketplace-20261117/work  │                                                      │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+  ↑ Opus now defaults to 1M context · 5x more room, same pricing
+  ↑
+  Debug mode enabled
+  Logging to: /private/tmp/ghc-self-marketplace-20261117/evidence/debug.log
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /plugin marketplace add Esonhugh/github-claude-channel
+  ⎿  Successfully added marketplace: github-claude-channel
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                             ◐ medium · /effort
+                                                                                                                                                         Debug

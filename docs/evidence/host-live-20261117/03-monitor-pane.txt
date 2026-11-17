@@ -1,0 +1,44 @@
+"subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",
+       "acked_seq": 1
+     }
+
+⏺ plugin:github-claude-channel:github-claude-channel - delivery (MCP)(channels: "unavailable", monitor: "available", evidence: "controlled real-GitHub host test
+                                                                      explicitly detaches Channels in favor of available Monitor")
+  ⎿  {
+       "mode": "monitor",
+       "status": "detached",
+     … +15 lines (ctrl+o to expand)
+
+✳ Whirlpooling…                                                                                                                               (0s · ↑ 23 tokens)
+⏺ Monitor(Real GitHub channel Monitor fallback validation)
+⏺
+  ⎿  Monitor started · b1l1btj2p · expires in 2m                                                                                              (0s · ↓ 50 tokens)
+
+✶ Whirlpooling…                                                                                                                               (0s · ↑ 75 tokens)
+⏺ HOST_LIVE_MONITOR_DONE
+
+✻─Brewed for 0s · done 12:34 AM · 1 monitor still running───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+───────────────────────────────                          ─────────────────────────────────────────────────────────────────────────────────────────��────────────
+⏺ Monitor event: {"event":{"event_id":"evt_0c2129c3df3d5fdd752e64dd9fc29b43b46cbbd7b10ec5f2b3a02aa0cf224379","type":"issue.comment.created","repository":"esonhu
+gh/github-claude-channel","subject":{"host":"github.com","repo":"esonhugh/github-claude-channel","kind":"issue","number":3,"events":["comments","lifecycle"]},"o
+bserved_at":"2026-11-17T16:34:55.317Z"},"deliveries":[{"watch_id":"watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209","subscription_id":"sub_272cb81c-3fa0-49c2-86b3-cd
+ae810562cc","seq":2}],"summary":"[Ext...(truncated) · Real GitHub channel Monitor fallback validation
+
+⏺ HOST_LIVE_MONITOR_DONE
+
+✻ Cooked for 0s · done 12:34 AM · 1 monitor still running
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───────────
+· Levitating…                                                                                                                                               (0s)
+⏺ Monitor "Real GitHub channel Monitor fallback validation" stream ended
+
+⏺─HOST_LIVE_MONITOR_DONE
+
+✻ Cogitated for 0s · done 12:35 AM
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

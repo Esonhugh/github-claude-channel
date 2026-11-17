@@ -1,0 +1,351 @@
+[
+  {
+    "client": "a",
+    "notifications": [
+      {
+        "meta": {
+          "event_id": "evt_48e4cdced0f2e68ec770ab87b7b8d12cff5f61425146792d89e0d3a8db9ef5c7",
+          "type": "issue.opened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":1}]"
+        },
+        "content_sha256": "db12689f3d97b9a3c80a15418812bbb581ef549cc4b5929c64caffb580bb67bc",
+        "received_at": "2026-11-17T16:16:28.903Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_0494a4eee2516f5c6bae6146ca58e2688c5d3f41680dd49ddb8bda7a0b8a1692",
+          "type": "issue.comment.created",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a01ea2c0-e654-42d6-90c3-93e9ce97205c\",\"subscription_id\":\"sub_58acb820-9b97-48a0-9a71-7d81b49293fe\",\"seq\":1}]"
+        },
+        "content_sha256": "75585889beca71a94b16f8142c97f3451b23f9e174b4c946b0204b2d43201ffe",
+        "received_at": "2026-11-17T16:17:01.502Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_38a591c0e1c7021185c72a9a7169b64c5ba04738ac1f5779b1a8db5144a30048",
+          "type": "issue.comment.edited",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a01ea2c0-e654-42d6-90c3-93e9ce97205c\",\"subscription_id\":\"sub_58acb820-9b97-48a0-9a71-7d81b49293fe\",\"seq\":2}]"
+        },
+        "content_sha256": "720dd3a380f76c5c4f154b6cbbfb55ed40ea67cfdce7b47d5ca548fa3f0d15a8",
+        "received_at": "2026-11-17T16:17:32.032Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_e0d8a933814cacee7a74e1753119ee46be34c9071d99e3fcabf6ce862e88d4e9",
+          "type": "issue.closed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":2}]"
+        },
+        "content_sha256": "b919de0347f63b5146147d2bcf3b6d89ba800d49f614fd22224540d5e9ba4481",
+        "received_at": "2026-11-17T16:17:58.095Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_5fed1d3eecba66a9a0955d3ce2e4823198d2121404e195d84425c3fad8322d8e",
+          "type": "issue.closed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a01ea2c0-e654-42d6-90c3-93e9ce97205c\",\"subscription_id\":\"sub_58acb820-9b97-48a0-9a71-7d81b49293fe\",\"seq\":3}]"
+        },
+        "content_sha256": "d828ffb93bcfc33b604556725b4d4606b9461269064b51981d052c4fa9dc1a62",
+        "received_at": "2026-11-17T16:18:01.608Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_5e95fdcbafe0bfc355834e48614df38a1fa2dd4d32e162e6282d0879f770e06f",
+          "type": "issue.reopened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":3}]"
+        },
+        "content_sha256": "e7ff82c1359cc689a7ea74689691dab24864d990d0f45ad3c534fc8119eb9a25",
+        "received_at": "2026-11-17T16:18:26.160Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_4f9296f96210a313cf9605c7fa650ece206c9c12b4cab3cc27aeaa63f64eb9f5",
+          "type": "issue.reopened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a01ea2c0-e654-42d6-90c3-93e9ce97205c\",\"subscription_id\":\"sub_58acb820-9b97-48a0-9a71-7d81b49293fe\",\"seq\":4}]"
+        },
+        "content_sha256": "84ea650f6225b6e91beabca669e0ec652f4c266d1d1da74a8587a2bac0dc3ec3",
+        "received_at": "2026-11-17T16:18:29.665Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_e11028d5cb6476f7f1b8acb3ea28ee6edac5daed09271ec9b522d6419b83add6",
+          "type": "pr.comment.created",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":1}]"
+        },
+        "content_sha256": "bac246d110799f4912c4def0e5c1677c86a636ebdc7415449bb53b529770f750",
+        "received_at": "2026-11-17T16:21:08.013Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_9fa691de1058bdd5c24eb04c23b05ef1475edea9f5fc337308cd163aa4e1d8ec",
+          "type": "pr.review.submitted",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":2}]"
+        },
+        "content_sha256": "140d1c0742ad3710b93fb8c133a799c3182b6fb04aa67c4d6c77ffe3e613dcee",
+        "received_at": "2026-11-17T16:22:09.168Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_d92be0cc5a2ff44283d720de07a4a968dfee58de3c4554fec8f2d67680070384",
+          "type": "pr.review.submitted",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":3}]"
+        },
+        "content_sha256": "9e38f97f2d8a8f1d3d7791b58db03b39ac69161e79bc51715405d062370148ac",
+        "received_at": "2026-11-17T16:23:07.381Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_f052b0c5501e6fa6343cfa069cecbafa1005536332f3faad1296e15f29d90481",
+          "type": "pr.review_comment.created",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":4}]"
+        },
+        "content_sha256": "ef4dd4d340730b1579c6b9eff1bbb09cbc5126ce4e04e6c7f485a95475912da7",
+        "received_at": "2026-11-17T16:23:07.381Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_ab6e94d1f84f3d62cfcb0e343073a0e98da74d3c1cfe1c7016cb117fcbadaffc",
+          "type": "pr.closed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":4}]"
+        },
+        "content_sha256": "673ab52540c9c62c0c68a25b90bb46f5812cdbc26666f470aafe9b8a60922f98",
+        "received_at": "2026-11-17T16:23:28.900Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_ff62b17dcbfdc58288395cebebf715813b513464b188903d371e558c4af10698",
+          "type": "pr.closed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":5}]"
+        },
+        "content_sha256": "b123a6e522bbb7cb3f724f9b16fdd345f176c65baeabb8b660a8008ce8e3f597",
+        "received_at": "2026-11-17T16:23:38.415Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_a62ca13ec148a236f13dda3904d9f738b372e4dec29cfff7a053122768f2eb75",
+          "type": "pr.reopened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":5}]"
+        },
+        "content_sha256": "655ef282dca43ed3168a14c780aad848e82808fb5085e24fb76fdc2f74547c2d",
+        "received_at": "2026-11-17T16:23:57.459Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_acab48fb9ffedc18472b60ead8399d29431146a536cdc1ef97dbc7d976fa92e0",
+          "type": "pr.reopened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_a7db4f81-62ab-499b-8bc4-265dd937ced8\",\"subscription_id\":\"sub_a5bc52e9-7042-4902-a04f-0fbf9d7e99c0\",\"seq\":6}]"
+        },
+        "content_sha256": "3ff63bc90bb85d5129fa0402e1a709aaf92a6a6038d01a2bcdca98239915b6d0",
+        "received_at": "2026-11-17T16:24:06.970Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_639632516fe489733aa8d339f105d40de2dabec4730d4fbb91d4f311300f2217",
+          "type": "issue.opened",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_1a68aeda-eaca-407c-9fed-cb158e314f08\",\"subscription_id\":\"sub_a1b4202e-d1af-4fad-8d4a-d4ed4b9524f4\",\"seq\":6}]"
+        },
+        "content_sha256": "98660159f7fd87f744f1b37002d233c10322bdf07ef049e22b68bfab8bb6bc82",
+        "received_at": "2026-11-17T16:25:28.143Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_7f8e0e449ece5af0346e742130e48c12373f105d619ebb9dcd45e510e11a8b3f",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":1}]"
+        },
+        "content_sha256": "6dfeeb84b81b1a36189a8a2211874b693346e9a2280b59aba782c208b082b94d",
+        "received_at": "2026-11-17T16:26:10.716Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_4ebaf40d4874717fc90d25d9d4b379174e197bd8396b9517c51aa6a21107d420",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":2}]"
+        },
+        "content_sha256": "00376508f4b25084bd7b8db749896c80dcda559c69524d83d8d81c7df7c48e1e",
+        "received_at": "2026-11-17T16:26:10.717Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_9735a6812bd1b87710ba26fd1199baf382b9b6d07e422a231ac3ebc9fc34630a",
+          "type": "actions.run.completed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":3}]"
+        },
+        "content_sha256": "b7214886c2ad78e626a4630e101086d1e3035a782bf7e3d1285af24c054ab293",
+        "received_at": "2026-11-17T16:27:09.833Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_88cb8bf85790cd578002f1114344bd1cff095addb59fb462bb256b8e6226bed1",
+          "type": "actions.job.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":4}]"
+        },
+        "content_sha256": "e6c943a1fc6537e0eeae03074c794a69c0be988fdd94cd193de8a195981d769e",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_cc0750c6d75eb259e188a8b581599ee9d3ffa01bd81c864be06c8542341af1d4",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":5}]"
+        },
+        "content_sha256": "06febbb4ee283e834adbae4303abea6e4f82dd13891248105854cc782ecf0f16",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_141987885a54ff21e4c0340146968c1dc27e7890f069b5b1163f1067fe423d28",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":6}]"
+        },
+        "content_sha256": "df0c9dbc3e91cc471018535412ed3c9f8250193268b6218f23eb83f35a4f45ea",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_e82cc6817300bb0d9e847d1b6a953c496ec1f11576232d1b1282003e88c8f9df",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":7}]"
+        },
+        "content_sha256": "be1171c2c318364f11252aa27564fd62c6cecbaef42ef8f747f37dafbe2a612c",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_ce904c1f3cb0f4788b42dce104e06e73ec31efa8dd35f887852af372010070b5",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":8}]"
+        },
+        "content_sha256": "34d6b9048dd37e2e817793645615737086e4cac55403f5d437648250d8ff615c",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_bc8c5123bea540fa8b39dd9715e437cf24723935902a942cf58128ae8691a7d0",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_e91be186-9553-4319-9542-93ba30d6787f\",\"subscription_id\":\"sub_b9c0caa7-1014-47cf-bc8d-2268f4ad8a79\",\"seq\":9}]"
+        },
+        "content_sha256": "47af178c5dc18511ddac7f244daf4efccf0e3480cfee3a01ad8fe6e98dce11d7",
+        "received_at": "2026-11-17T16:27:09.834Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_d300bfee7d82dc041a6703bc24c91c7521d0aaf8ae64c5f401fb71aa59ebd2cc",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":1}]"
+        },
+        "content_sha256": "344a41cf017a74d6cb7e22577ee851de746e3c80cabf394742213b339168fee7",
+        "received_at": "2026-11-17T16:29:40.653Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_1f8f3c0c43857c7919fc0ddf9769c448e425be7c068b4257ed73414def67e4f8",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":2}]"
+        },
+        "content_sha256": "cfa6d3fc5423040f2b9462bf7242e1f4be5ea68a319664d2a7174b29aa61c540",
+        "received_at": "2026-11-17T16:29:40.654Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_5ed796df830a31090ace82a7966d097261b9e8b0c471c4900ce541dda5acd66e",
+          "type": "actions.run.completed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":3}]"
+        },
+        "content_sha256": "63613f313ae289a2fdad3b4c8600b794d9adbf1a184e83bd5d740b66d0007754",
+        "received_at": "2026-11-17T16:30:11.761Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_41fcf50ba70999b445e4adc389c784ac65651a4c38a7626b00c01dff280e1fed",
+          "type": "actions.job.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":4}]"
+        },
+        "content_sha256": "e7bffd4c943c32ada92d4b1a675edf287dd97a755b6f5b538913261f6157f0e1",
+        "received_at": "2026-11-17T16:30:11.769Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_bea9fc19a32c059a00d62f8f29176921a0de3039694c20d35b428d335efd100f",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":5}]"
+        },
+        "content_sha256": "124f36f424ebf9eef505dfd2aeb16597fd280f7fa7bd2d2ad69dcd8a6681b9d5",
+        "received_at": "2026-11-17T16:30:11.769Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_844ef275da1dc2732f0dc508b815f625586720e0edb5d1c1b8a70282823e33c0",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":6}]"
+        },
+        "content_sha256": "4552dd14757d541926228a580cb082b007c84508517a590eff7585cfb774b153",
+        "received_at": "2026-11-17T16:30:11.769Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_d2c216489dc5bc935009ac790d200ed86d50c1f15ff24db43aae6d729d8c756d",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":7}]"
+        },
+        "content_sha256": "2614c7295d076e01d5fd3a5bea5e8e3a04a3b48d579bafa6c6060d00fa3d107a",
+        "received_at": "2026-11-17T16:30:11.769Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_add058666350956f58861f6b058d3fb193f13698a43c7022d4c20153aa785c52",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":8}]"
+        },
+        "content_sha256": "4974731fe09212f1a2198938002c47dbcb0c4d4388f6f556bcb1521e08c21283",
+        "received_at": "2026-11-17T16:30:11.770Z"
+      },
+      {
+        "meta": {
+          "event_id": "evt_ef27ad95b1258d58e93e94046270a8db0a23f432e2cb6b8856f72a71a7f2b44e",
+          "type": "actions.step.changed",
+          "repo": "esonhugh/github-claude-channel",
+          "deliveries": "[{\"watch_id\":\"watch_4e6ece07-b7b2-443b-afe7-4c9b0afe4e30\",\"subscription_id\":\"sub_156425ac-b8f6-42eb-a2bc-42455df7c6ef\",\"seq\":9}]"
+        },
+        "content_sha256": "9c21593efa3155e6d913200d019fd07065ee4596317efd869df3bd271c860a7f",
+        "received_at": "2026-11-17T16:30:11.771Z"
+      }
+    ]
+  },
+  {
+    "client": "b",
+    "notifications": []
+  }
+]

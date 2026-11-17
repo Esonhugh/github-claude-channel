@@ -1,0 +1,201 @@
+{
+  "repository": "Esonhugh/github-claude-channel",
+  "marker": "github-channel-smoke-2026-11-17T16-15-54-602Z-78405",
+  "date": "2026-11-17T16:30:17.826Z",
+  "proxy": "http://127.0.0.1:7890",
+  "poll_ms": 30000,
+  "scope": "Real GitHub API + MCP SDK clients + CLI stream; not host binary evidence",
+  "input": {
+    "issue": null,
+    "pr": 1,
+    "runs": [],
+    "workflow": "channel-validation.yml",
+    "ref": "validation/channel-events-20261117"
+  },
+  "results": [
+    {
+      "id": "setup",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "repository.opened",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "issue.comment.channels",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "session.ack-isolation",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "issue.comment.edited",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "issue.closed",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "issue.reopened",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "unsubscribe.isolation",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "monitor.cli-fallback",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "pr.comment",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "pr.review",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "pr.inline",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "pr.closed",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "pr.reopened",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "actions.supplied-runs",
+      "verdict": "not covered",
+      "reason": "Not reached or optional fixture not supplied"
+    },
+    {
+      "id": "actions.dispatch.success",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "actions.dispatch.failure",
+      "verdict": "passed",
+      "reason": "Required assertions observed"
+    },
+    {
+      "id": "host.binary-channels-monitor-skills",
+      "verdict": "not covered",
+      "reason": "SDK notification receiver / CLI stream are not Claude host binary, Monitor TaskStop, or skill-dispatch evidence"
+    },
+    {
+      "id": "pr.opened-merged",
+      "verdict": "not covered",
+      "reason": "This script neither creates nor merges PRs; supplied fixture PR is prepared by the coordinator"
+    },
+    {
+      "id": "actions.changes.44125363066",
+      "verdict": "passed",
+      "reason": "Observed real run completion, terminal job/step changes, and SDK channel notification"
+    },
+    {
+      "id": "actions.changes.44125966878",
+      "verdict": "passed",
+      "reason": "Observed real run completion, terminal job/step changes, and SDK channel notification"
+    },
+    {
+      "id": "cleanup.processes",
+      "verdict": "passed",
+      "reason": "All recorded daemon/adapter/stream/gh invocation PIDs exited"
+    }
+  ],
+  "resources": {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-github-smoke-2rUSCI",
+    "evidence": "/Users/esonhugh/workspace/projects/WebStormProjects/cc/github-claude-channel/docs/evidence/github-2026-11-17T16-15-54-602Z-78405",
+    "started_pids": [
+      78407,
+      78411,
+      78412,
+      78468,
+      79064,
+      79467,
+      79890,
+      80197,
+      80493,
+      80778,
+      80782,
+      81492,
+      81607,
+      82233,
+      82993,
+      82997,
+      83296,
+      83600,
+      83958,
+      83977,
+      83998,
+      84338,
+      86035,
+      86073,
+      86371,
+      78407,
+      78411,
+      78412,
+      87919,
+      87920,
+      87941
+    ],
+    "socket": "/tmp/ghc-502-654c6f56321ac048b1ef.sock",
+    "remaining_pids": [],
+    "issue_number": 2,
+    "created_issue": true,
+    "workflow_runs": [
+      {
+        "id": 44125363066,
+        "outcome": "success",
+        "marker": "github-channel-smoke-2026-11-17T16-15-54-602Z-78405-success"
+      },
+      {
+        "id": 44125966878,
+        "outcome": "failure",
+        "marker": "github-channel-smoke-2026-11-17T16-15-54-602Z-78405-failure"
+      }
+    ],
+    "in_flight_owned_processes": [
+      {
+        "pid": 78407,
+        "ppid": 78405,
+        "command": "bun"
+      },
+      {
+        "pid": 78411,
+        "ppid": 78405,
+        "command": "bun"
+      },
+      {
+        "pid": 78412,
+        "ppid": 78405,
+        "command": "bun"
+      }
+    ],
+    "issue_final_state": "closed",
+    "pr_final_state": "open",
+    "socket_reclaimed": true,
+    "private_files_reclaimed": true
+  }
+}

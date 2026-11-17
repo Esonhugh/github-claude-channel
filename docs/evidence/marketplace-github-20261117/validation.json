@@ -1,0 +1,88 @@
+{
+  "plugin": "github",
+  "marketplace": "github-claude-channel",
+  "repository": "Esonhugh/github-claude-channel",
+  "commit": "747ceede4b5136fe5046b15a7051f10bcae1a29e",
+  "install_term": "term-6",
+  "final_runtime_term": "term-8",
+  "host_pids": [
+    99313,
+    11206,
+    21294
+  ],
+  "provider_pids": [
+    99102,
+    21060
+  ],
+  "artifact_content_hashes": {
+    ".claude-plugin/plugin.json": "552aead780c1a3859203cafec5bec126faf6832de5412daef161f0e05909f2c3",
+    ".claude-plugin/marketplace.json": "a7a4951f32164f9bd7e3f22ce3f6e3ede2df20dbb50130d10966338bb085707f",
+    ".mcp.json": "ccc7063ea658e74f19ee8db69c618c0c556a2d0f507a69b6a8fde1162a031052",
+    "src/cli.ts": "cbb847adc94811ad9575a80245736cbcb045b09746deb0c8b9946ce87d367e06",
+    "skills/subscribe/SKILL.md": "8cede69d3d4f4affbe7d37789274c608f639d45db3e2374ff0af9f21fe1fd7cf",
+    "skills/list/SKILL.md": "2f79a3f2aa168ec436b169ea8396c93d319a092dc7d19cd1bf5b0efbf64d4c4c",
+    "skills/unsubscribe/SKILL.md": "aea58b79d7ac9a49cc66d1e8d71ed371f7428a095f8c8df55b748f9608d60ad3"
+  },
+  "assertions": [
+    {
+      "id": "github-marketplace-add",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "root-plugin-install",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "reload-and-github-list",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "installed-artifact-matches-source",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "github-subscribe",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "real-github-channel",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "github-unsubscribe-empty",
+      "runtime_state": "done",
+      "verdict": "passed"
+    },
+    {
+      "id": "cleanup",
+      "runtime_state": "done",
+      "verdict": "passed"
+    }
+  ],
+  "real_comment_id": "6955197964",
+  "real_event_id": "evt_1b597d54ad5e5ac2f66bad71136711be9ea5db81c06ad9cde7b324b74fe2aaf4",
+  "model": "deterministic loopback fixture, not live-model language evidence",
+  "retry_note": "term-7 auth fixture inherited isolated XDG_CONFIG_HOME; gh exit4 auth required. New isolated HOME/config/state retained immutable installed artifacts; gh-only original auth HOME and XDG mapping corrected. No product collector changes.",
+  "remaining_known_pids": [],
+  "remaining_sockets": [],
+  "socket_checks": [
+    {
+      "root": "/private/tmp/ghc-self-marketplace-20261117",
+      "socket": "/tmp/ghc-502-b486cccf67f0148475f9.sock",
+      "exists": false
+    },
+    {
+      "root": "/private/tmp/ghc-self-marketplace-final-20261117",
+      "socket": "/tmp/ghc-502-5cdd7e5b5c24aef4b9a2.sock",
+      "exists": false
+    }
+  ],
+  "remaining_fixture_command_processes": [],
+  "process_check_note": "Excluded inspector and its launcher; initial raw substring check matched the inspection command itself."
+}

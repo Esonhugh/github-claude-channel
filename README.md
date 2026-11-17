@@ -4,7 +4,7 @@
 
 当前已实现运行时、插件配置和三个 skills，完成本地回归、真实 GitHub Issue/PR/Actions 和参考 fork 宿主 Channels/Monitor 验收。**仍为初始验证版本，不表示官方 CLI parity、全部边界或 Marketplace 安装发布已经通过**。各项结论以对应报告的实际证据为准。
 
-详见 [设计文档](docs/design.md)、[实施与验证状态](docs/implementation.md)、[真实宿主交互验收](docs/host-validation.md)、[真实 GitHub 验收结果](docs/github-validation-results.md) 和 [自测方法](docs/github-validation.md)。各报告区分源码测试、宿主路由、真实 API 和未覆盖项。
+详见 [设计文档](docs/design.md)、[实施与验证状态](docs/implementation.md)、[当前插件/市场安装验收](docs/marketplace-validation.md)、[真实宿主交互验收](docs/host-validation.md)、[真实 GitHub 验收结果](docs/github-validation-results.md) 和 [自测方法](docs/github-validation.md)。各报告区分源码测试、宿主路由、真实 API 和未覆盖项。
 
 ## 当前支持
 
@@ -44,7 +44,7 @@ GHC_DELIVERY_EVIDENCE='Explicit development channel startup and local confirmati
   --dangerously-load-development-channels plugin:github@github-claude-channel
 ```
 
-仅做本地源码开发、不走 marketplace 安装时，可从仓库根目录使用 `--plugin-dir "$PWD" --dangerously-load-development-channels server:plugin:github:github`，同样需要真实宿主确认。历史验收报告保留当时的命名与命令，不代表新命名入口已经重新通过宿主或官方 CLI parity 验收。
+仅做本地源码开发、不走 marketplace 安装时，可从仓库根目录使用 `--plugin-dir "$PWD" --dangerously-load-development-channels server:plugin:github:github`，同样需要真实宿主确认。历史验收报告保留当时的命名与命令；当前命名已完成从真实 GitHub 添加市场、安装、reload、三个 skills 和真实评论 Channels 投递的参考宿主验收，见安装报告。官方 CLI parity 仍未验证。
 
 所有客户端共享同一认证 profile 的 daemon；每个 stdio adapter 默认创建独立 consumer，并生成 0600 的本机恢复文件。环境变量：
 

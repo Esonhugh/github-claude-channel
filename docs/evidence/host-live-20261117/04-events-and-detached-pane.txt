@@ -1,0 +1,44 @@
+⏺ HOST_LIVE_MONITOR_DONE
+
+✻ Cooked for 0s · done 12:34 AM · 1 monitor still running
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───────────
+· Levitating…                                                                                                                                               (0s)
+⏺ Monitor "Real GitHub channel Monitor fallback validation" stream ended
+
+⏺─HOST_LIVE_MONITOR_DONE
+
+✻ Cogitated for 0s · done 12:35 AM
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───
+❯ 读取并确认这两个实际收到的测试事件，列出当前订阅和 Monitor 结束后的投递状态，暂不退订。
+
+· Propagating…                                                                                                                                              (0s)
+⏺ plugin:github-claude-channel:github-claude-channel - events (MCP)(subscription_id: "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc")
+⏺    Running…
+─────{       ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───────────────────────────
+· Propa"subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",                                                                          (0s · ↓ 2 tokens)
+       "events": [
+     … +56 lines (ctrl+o to expand)
+──────────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────────────────────────────────────
+⏺ plugin:github-claude-channel:github-claude-channel - ack (MCP)(subscription_id: "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc", through_seq: 2)
+⏺ ⎿  Running…
+     {
+· Propa"subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",                                                                         (0s · ↓ 12 tokens)
+       "acked_seq": 2
+     }
+──────────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────────────────────────────────────
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [
+         {
+     … +55 lines (ctrl+o to expand)
+
+⏺ HOST_LIVE_VERIFY_DONE
+
+✻ Churned for 0s · done 12:36 AM
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

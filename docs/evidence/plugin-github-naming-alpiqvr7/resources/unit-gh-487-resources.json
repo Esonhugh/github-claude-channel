@@ -1,0 +1,98 @@
+[
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-2FCC9I",
+    "pids": [
+      489,
+      490
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-EK7aGS",
+    "pids": [],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-bECAm1",
+    "pids": [
+      491
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-BmpFtc",
+    "pids": [
+      492
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-lsyTM4",
+    "pids": [
+      493
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-fprnry",
+    "pids": [
+      494
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-nLCTiF",
+    "pids": [
+      495
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-HVlfm4",
+    "pids": [
+      496,
+      497,
+      498,
+      499
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-27h1SI",
+    "pids": [
+      500,
+      501,
+      502,
+      503,
+      504,
+      506,
+      507,
+      508,
+      509,
+      512
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  },
+  {
+    "temporary_root": "/var/folders/4h/pgbsmxdx3wj12mb6mkj90gmh0000gp/T/ghc-gh-cWpIcA",
+    "pids": [
+      514,
+      515,
+      516,
+      517,
+      518,
+      519
+    ],
+    "reclaimed": true,
+    "remaining_pids": []
+  }
+]

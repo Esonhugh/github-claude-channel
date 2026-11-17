@@ -1,0 +1,44 @@
+… +56 lines (ctrl+o to expand)
+──────────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────────────────────────────────────
+⏺ plugin:github-claude-channel:github-claude-channel - ack (MCP)(subscription_id: "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc", through_seq: 2)
+⏺ ⎿  Running…
+     {
+· Propa"subscription_id": "sub_272cb81c-3fa0-49c2-86b3-cdae810562cc",                                                                         (0s · ↓ 12 tokens)
+       "acked_seq": 2
+     }
+──────────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────────────────────────────────────
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+  ⎿  {
+       "watches": [
+         {
+     … +55 lines (ctrl+o to expand)
+
+⏺ HOST_LIVE_VERIFY_DONE
+
+✻ Churned for 0s · done 12:36 AM
+
+❯ /github-claude-channel:unsubscribe watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209
+
+  plugin:github-claude-channel:github-claude-channel - unsubscribe (MCP)(watch_id: "watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209")
+⏺ ⎿  Running…
+     {
+✻ Swoop"watch_id": "watch_9d598c9c-9ebd-42ed-97e8-ef4289d14209",                                                                               (0s · ↓ 1 tokens)
+       "state": "unsubscribed"
+     }
+─────────────────────────────────────────────────────────────────────────────────────────────��─────────────────────────────────────────────────────────────────
+✻ Swooping…                                                                                                                                    (0s · ↑ 2 tokens)
+⏺ plugin:github-claude-channel:github-claude-channel - subscriptions (MCP)
+     {
+───────"watches":─[],─────────────────────────────────────────────────��────────────────────────────────────────────────────────────────────────────────────────
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+
+✻ Swooping…                                                                                                                                    (0s · ↑ 4 tokens)
+⏺ HOST_LIVE_UNSUBSCRIBE_DONE
+
+✻─Sautéed for 0s · done 12:37 AM────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

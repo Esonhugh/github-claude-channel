@@ -1,0 +1,44 @@
+│                       ▐▛███▜▌                      │ Recent activity                                      │
+│                      ▝▜█████▛▘                     │ No recent activity                                   │
+│                        ▘▘ ▝▝                       │                                                      │
+│                                                    │                                                      │
+│            Opus 5.5 · API Usage Billing            │                                                      │
+│   /private/tmp/ghc-self-marketplace-20261117/work  │                                                      │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+  ↑ Opus now defaults to 1M context · 5x more room, same pricing
+  ↑
+  Debug mode enabled
+  Logging to: /private/tmp/ghc-self-marketplace-20261117/evidence/debug.log
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /plugin marketplace add Esonhugh/github-claude-channel
+  ⎿  Successfully added marketplace: github-claude-channel
+
+❯ /plugin install github@github-claude-channel
+  ⎿  ✓ Installed github. Run /reload-plugins to apply.
+
+· Combobulating…                                                                                                                                            (0s)
+❯ /reload-plugins
+
+  ⎿  Reloaded: 1 plugin · 0 commands · 3 skills · 5 agents · 0 hooks · 1 plugin MCP server · 0 plugin LSP servers                                           (0s)
+
+❯ /github:list
+   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���──────────────
+✢ Shimmying…                                                                                                                                                (0s)
+  plugin:github:github - subscriptions (MCP)
+⏺    Running…
+─────{       ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────���───
+✳ Shimm"watches": [],                                                                                                                          (0s · ↓ 2 tokens)
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+─────────────────────────────────────────────────────────────────────────────────────────────��─────────────────────────────────────────────────────────────────
+⏺ HOST_INSTALLED_LIST_DONE
+
+✻ Brewed for 0s · done 12:58 AM
+
+───────────────────────────────────────────────────────────────────────���──────────────────────────────────────────────────────────────────────────────────────
+──
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug

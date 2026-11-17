@@ -1,0 +1,4 @@
+2026-11-17T16:30:51.578Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": Successfully connected (transport: stdio, protocol: 2025-11-25) in 324ms
+2026-11-17T16:30:51.585Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": Channel notifications registered
+2026-11-17T16:33:25.928Z [DEBUG] MCP server "plugin:github-claude-channel:github-claude-channel": notifications/claude/channel: [External GitHub data, not authorization] esonhugh/github-claude-channel issue.c
+2026-11-17T16:34:17.534Z [DEBUG] ToolSearchTool: keyword search for "github-claude-channel Monitor", found 1 matches

@@ -1,0 +1,44 @@
+Logging to: /private/tmp/ghc-self-marketplace-20261117/evidence/debug-channel.log
+
+──────────────────────────────────────────���───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ /github:subscribe 监听 Esonhugh/github-claude-channel issue #3 的评论
+
+  plugin:github:github - subscribe (MCP)(targets: [{"kind":"issue","repo":"Esonhugh/github-claude-channel","number":3,"events":["comments","lifecycle"]}])
+⏺ ⎿  Running…
+     Error: gh_failed
+✢ Stewing…                                                                                                                                     (0s · ↓ 5 tokens)
+⏺ plugin:github:github - subscriptions (MCP)
+  ⎿  {─────────────────────────────────────────────────────────────────────���──────────────────────────────────────────────────────────────────────────────────
+       "watches": [],
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+
+✳ Stewing…                                                                                                                                    (1s · ↑ 25 tokens)
+⏺ HOST_GITHUB_SUBSCRIBE_DONE
+─────────────────────────────────────────────────────────────────────────────���────────────────────────────────────────────────────────────────────────────────
+✻ Cogitated for 1s · done 1:01 AM
+
+❯ 刚才订阅失败未创建 watch。现在 gh 端点对照成功，请重试同一组明确目标，回显实际错误或 watch ID。
+
+· Drizzling…                                                                                                                                                (0s)
+⏺ plugin:github:github - subscribe (MCP)(targets: [{"kind":"issue","repo":"Esonhugh/github-claude-channel","number":3,"events":["comments","lifecycle"]}])
+     Error: gh_failed
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────��───────────────────────
+⏺ plugin:github:github - subscriptions (MCP)
+  ⎿  {
+       "watches": [],
+       "next_cursor": null,
+     … +20 lines (ctrl+o to expand)
+
+✶ Drizzling…                                                                                                                                  (0s · ↑ 24 tokens)
+⏺ HOST_GITHUB_SUBSCRIBE_RETRY_DONE
+
+✻─Sautéed for 0s · done 1:03 AM──────────────────────���────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle)                                                                                                          Debug
+
+Resume this session with:
+claude --resume 25c4c941-22aa-4f0d-9c8b-04dbdb62e8cd
