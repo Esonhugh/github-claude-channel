@@ -1,0 +1,2 @@
+GitHub channel validation fixture.
+This PR exists only to verify read-only event subscriptions.
