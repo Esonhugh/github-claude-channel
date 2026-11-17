@@ -6,9 +6,9 @@
 
 | 范围 | 状态与入口 |
 | --- | --- |
-| 插件配置 | `.claude-plugin/plugin.json`、`.mcp.json`；源代码加载需要先 bun install |
-| Skills | subscribe / unsubscribe / list，当前 session 内执行，无 context:fork，无旧子命令 |
-| MCP stdio | `bun src/cli.ts stdio`，7 个结构化工具，MCP initialize 声明 claude/channel，不声明 permission capability |
+| 插件与 marketplace | 同仓库双用途；marketplace github-claude-channel 通过 source ./ 指向根插件 github；源代码加载需要先 bun install |
+| Skills | /github:subscribe、/github:unsubscribe、/github:list，当前 session 内执行，无 context:fork，无旧子命令 |
+| MCP stdio | `bun src/cli.ts stdio`，server name/key 为 github，7 个结构化工具及 claude/channel 协议不变，不声明 permission capability |
 | 共享采集 | 同一认证 profile 一个 Unix socket daemon；多个 adapter、每个独立 consumer；CLI/adapter 自动发现或启动 daemon |
 | 恢复 | 随机 consumer secret 只写 0600 文件，DB 保存 hash；epoch fence 旧连接，恢复不依赖 clientInfo、watch_id 或宿主 conversation ID |
 | 持久化 | SQLite WAL、短事务，schema user_version=1；初始 schema 的 oldest_seq 列支持幂等迁移 |
@@ -22,6 +22,19 @@
 | 清理 | CLI status/stop/clean，7 天事件保留，24 小时未连接 consumer 到期，默认空闲 5 分钟退出；clean 不删除仍保留的事件 |
 
 ## 给外部黑盒验证者的启动合约
+
+仓库/package/状态目录品牌及 marketplace 名保持 `github-claude-channel`，只有 plugin 与 MCP server 名改为 `github`。安装入口：
+
+```text
+/plugin marketplace add Esonhugh/github-claude-channel
+/plugin install github@github-claude-channel
+```
+
+安装后优先使用 `--dangerously-load-development-channels plugin:github@github-claude-channel` 并完成宿主确认；仅本地源码开发使用 `--plugin-dir "$PWD" --dangerously-load-development-channels server:plugin:github:github`。正常 `--channels` 仍受允许名单约束；本次命名与双用途配置回归不替代真实 marketplace 安装验收。
+
+marketplace owner 必须是含 name 的对象，`source: "./"` 相对于 marketplace 根目录而非 `.claude-plugin/`；已核对参考 fork `src/utils/plugins/schemas.ts:269`、`:1164`、`:1448` 的 owner/source/marketplace schema。配置合约测试检查根路径、名称、版本和技能引用；MCP 子进程测试检查 initialize 返回的 server name。历史 evidence、真实宿主及 GitHub 验收报告保留原始命名，由协调方另行说明，不做全局替换。
+
+本次命名/双用途打包回归：**31 个源码测试、10 个打包入口集成均通过**，本地 typecheck 与 Bun build 通过；先补配置红测试再改名。新日志单独保存在 [plugin-github-naming-alpiqvr7](evidence/plugin-github-naming-alpiqvr7/validation.json)，通过 GHC_EVIDENCE_DIR 隔离资源记录。现有历史文件与父会话脚本按本轮快照核对无改写；真实新 marketplace 安装与新 namespace 的宿主验收仍由协调方负责。
 
 在本仓库执行 `bun install --frozen-lockfile`。以新的 `GHC_STATE_DIR` 隔离测试，不要与日常 session 共用恢复文件：
 
@@ -114,4 +127,6 @@ gh host 限于 GHC_ALLOWED_HOSTS（默认 GH_HOST 或 github.com），避免恶�
 
 本地 covered：双 MCP client 真 stdio 子进程、同一 daemon、归属隔离、规则去重、ACK 越界与独立进度、Channels 通知合约、Monitor CLI stream 与到期、lease fencing、PR merge/review/inline、Actions attempt/job/step、仓库新建发现、101 条评论分页、SQLite 重启/恢复、retention gap、初始化失败原子性、账号切换、只读 GET、401/403/404/429、ETag304、超时子进程回收和管理 stop/clean。
 
-外部 **not covered**：真实 GitHub 权限/gh/代理/API 时间语义、实际官方 Claude/本地 fork 插件装载及 skill dispatch、实际 Channels 启用/关闭、真实宿主 Monitor TaskStop/限流/到期、tmux UI、Marketplace 可安装性、多机器/GHES。运行时代码自测不替代这些验收；由协调方补充，不在此处虚报 passed。
+以上为本地自动化测试阶段的覆盖边界，不单独证明外部系统行为。协调方随后已补充 [真实 GitHub 验收](github-validation-results.md) 与 [参考 fork 宿主交互验收](host-validation.md)：实际 GitHub Issue/PR/Actions、SDK Channels/CLI stream、真实宿主插件装载、三个 skills、Channels 接收与 Monitor fallback 均有独立证据。
+
+剩余 **not covered**：官方 CLI parity、真实模型语言理解、通用宿主自动能力探测、显式宿主 Monitor TaskStop、Marketplace 安装发布、多机器/GHES，以及真实 GitHub merge/rerun 等未在远端矩阵执行的路径。详见各验收报告，不将模拟测试或宿主 fixture 冒充真实远端/模型证据。

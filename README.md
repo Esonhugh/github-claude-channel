@@ -2,9 +2,9 @@
 
 基于 `gh CLI` 的只读 GitHub Channels / MCP 插件：让不同客户端/session 独立订阅仓库、Actions run/workflow、Issue 和 PR 的变化。
 
-当前已实现本地运行时、插件配置和三个 skills，以 fake gh + 真实 MCP 子进程自测；**尚未完成真实 GitHub、官方 Claude/本地 fork 的 Channels/Monitor 验收，不是已验证发布版本**。Marketplace 登记不在本运行时的自测范围。
+当前已实现运行时、插件配置和三个 skills，完成本地回归、真实 GitHub Issue/PR/Actions 和参考 fork 宿主 Channels/Monitor 验收。**仍为初始验证版本，不表示官方 CLI parity、全部边界或 Marketplace 安装发布已经通过**。各项结论以对应报告的实际证据为准。
 
-详见 [设计文档](docs/design.md)、[实施与验证状态](docs/implementation.md)。后者区分已实现行为和设计中的后续项。
+详见 [设计文档](docs/design.md)、[实施与验证状态](docs/implementation.md)、[真实宿主交互验收](docs/host-validation.md)、[真实 GitHub 验收结果](docs/github-validation-results.md) 和 [自测方法](docs/github-validation.md)。各报告区分源码测试、宿主路由、真实 API 和未覆盖项。
 
 ## 当前支持
 
@@ -17,14 +17,34 @@
 
 ## 安装与启动
 
-需要 Bun、已配置只读访问权限的 `gh`，以及支持 MCP 的宿主。仅新增 MCP SDK 与 Zod 两项直接依赖：
+同一仓库同时是插件和 marketplace：仓库/package/状态目录品牌保留 `github-claude-channel`，marketplace 名为 `github-claude-channel`，插件与 MCP server 名为 `github`。在宿主内安装：
+
+```text
+/plugin marketplace add Esonhugh/github-claude-channel
+/plugin install github@github-claude-channel
+```
+
+marketplace 定义位于 `.claude-plugin/marketplace.json`，条目 `source: "./"` 指向仓库根目录的插件，而不是 `.claude-plugin/` 子目录。上述是当前命名的安装入口；实际安装与宿主验收以对应版本的报告为准。
+
+需要 Bun、已配置只读访问权限的 `gh`，以及支持 MCP 的宿主。源码加载/开发先安装依赖；运行时只有 MCP SDK 与 Zod 两项直接依赖：
 
 ```bash
 bun install --frozen-lockfile
 bun src/cli.ts stdio
 ```
 
-stdio 是 JSON-RPC 服务，不是交互命令行。插件 manifest 为 `.claude-plugin/plugin.json`，MCP 声明为 `.mcp.json`，由支持本地插件的宿主装载；skills 文件在 `skills/`。**加载插件或 MCP 成功不会自动打开 Channels**，仍需宿主自己的频道启用/准入流程，具体宿主装载命令尚待外部验证。
+stdio 是 JSON-RPC 服务，不是交互命令行。插件 manifest 为 `.claude-plugin/plugin.json`，MCP 声明为 `.mcp.json`，由支持本地插件的宿主装载；skills 文件在 `skills/`。**加载插件或 MCP 成功不会自动打开 Channels**，仍需宿主自己的频道启用/准入流程。
+
+已安装 marketplace 插件时，使用以下开发频道入口，二进制路径换成自己的参考 fork 产物，并实际接受开发频道确认。正常 `--channels` 仍受宿主允许名单约束，不会因为该仓库也是 marketplace 就自动放行：
+
+```bash
+GHC_CHANNELS_STATE=enabled \
+GHC_DELIVERY_EVIDENCE='Explicit development channel startup and local confirmation' \
+  /path/to/built-claude \
+  --dangerously-load-development-channels plugin:github@github-claude-channel
+```
+
+仅做本地源码开发、不走 marketplace 安装时，可从仓库根目录使用 `--plugin-dir "$PWD" --dangerously-load-development-channels server:plugin:github:github`，同样需要真实宿主确认。历史验收报告保留当时的命名与命令，不代表新命名入口已经重新通过宿主或官方 CLI parity 验收。
 
 所有客户端共享同一认证 profile 的 daemon；每个 stdio adapter 默认创建独立 consumer，并生成 0600 的本机恢复文件。环境变量：
 
@@ -44,9 +64,9 @@ stdio 是 JSON-RPC 服务，不是交互命令行。插件 manifest 为 `.claude
 ## 订阅入口
 
 ```text
-/github-claude-channel:subscribe <描述>
-/github-claude-channel:unsubscribe <watch-id>
-/github-claude-channel:list
+/github:subscribe <描述>
+/github:unsubscribe <watch-id>
+/github:list
 ```
 
 watch_id 由服务端成功持久化订阅后生成并返回，是一组 targets 的订阅句柄，不是 GitHub ID 或恢复凭据。当前 session 提交规范化规则完全相同的订阅，幂等返回已有 watch_id；不同 session 独立。`/subscribe` 短名取决于宿主命令解析，不保证可用。
@@ -58,11 +78,11 @@ list 只列当前 consumer/session，按 watch_id 分组、分页展示目标/�
 自然语言由宿主 skill 解析，结构化 MCP 工具不执行描述。示例：
 
 ```text
-/github-claude-channel:subscribe 监听 owner/repo 的 PR #42 的 review、行内意见、关闭和合并；同时监听 owner/other 的 issue #17 评论、关闭和重开
-/github-claude-channel:subscribe 监听 owner/repo 的 run 123456789，最新 attempt，通知 job/step 和最终结果
-/github-claude-channel:subscribe 监听 owner/repo 新建、关闭、重开的 issue 和 PR
-/github-claude-channel:unsubscribe watch_opaque
-/github-claude-channel:list
+/github:subscribe 监听 owner/repo 的 PR #42 的 review、行内意见、关闭和合并；同时监听 owner/other 的 issue #17 评论、关闭和重开
+/github:subscribe 监听 owner/repo 的 run 123456789，最新 attempt，通知 job/step 和最终结果
+/github:subscribe 监听 owner/repo 新建、关闭、重开的 issue 和 PR
+/github:unsubscribe watch_opaque
+/github:list
 ```
 
 skill 会在当前请求 session 内把自然语言转换成明确的结构化 MCP 订阅；有歧义先澄清且不创建，描述不作为 shell 执行，不通过 fork 建立订阅归属。成功后展示 watch_id 和规范化范围；replay/ack 使用内部 subscription ID，与 watch 句柄分离。
@@ -95,6 +115,10 @@ bun run build
 stop/clean 是本机私有 Unix socket 管理操作，不调用 GitHub 写 API。adapter EOF 和信号关闭连接；daemon 默认无消费者活动 5 分钟退出。固定 attempt 只有在所请求 job/step 已完整采集、全部终态且连续两次最终核对一致后停止查询；latest 在确认后低频核对 rerun。终端/脚本异常退出可能遗留旧 socket，启动失败会报告路径，不自动删除未知 socket。
 
 `bun run typecheck` 使用本地 devDependencies 中的 TypeScript 与 @types/bun，直接执行 `tsc --noEmit`，不依赖外部仓库、全局 tsc 或环境变量；`bun install --frozen-lockfile` 会安装完整开发工具链。运行时仍只有 MCP SDK 和 Zod 两项直接依赖，构建使用 Bun 内置能力。保留 Bun 的 SDK/SQLite/stdio 实现，不为减少声明类型依赖而重写为 Python/uv 或维护第二套实现。测试只用 fake gh，不要求 GitHub token；构建输出 `dist/cli.js` 也可用 `GHC_TEST_ENTRY=dist/cli.js bun test tests/integration.test.ts` 做同一组子进程验证。测试证据及资源回收记录在 `docs/evidence/`。
+
+需要精简部署时，可以在构建机执行 `bun run build`，将约 0.59 MB 的 `dist/cli.js` 单独部署，在运行机使用 `bun /path/to/cli.js stdio`。已验证无 `node_modules` 的独立目录可以完成 MCP 握手和工具列举；运行机仍需要 Bun 和 gh。开发依赖及传递依赖没有因此消失，只是不必随打包文件部署；当前不发布预构建 release。
+
+回归时可设置 `GHC_EVIDENCE_DIR` 指向新的测试证据目录，隔离本轮资源记录，避免改写已有历史日志；这是测试输出选项，不改变插件状态目录。
 
 ## 边界
 

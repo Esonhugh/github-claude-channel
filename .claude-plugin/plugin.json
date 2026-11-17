@@ -1,5 +1,5 @@
 {
-  "name": "github-claude-channel",
+  "name": "github",
   "version": "0.1.0",
   "description": "Read-only gh CLI GitHub watches with consumer-scoped Channels delivery and explicit Monitor fallback."
 }

@@ -3,7 +3,7 @@ description: Subscribe this session to explicitly selected GitHub events using a
 argument-hint: <description>
 ---
 
-Create a GitHub watch for the CURRENT session using the github-claude-channel MCP tools. Execute here; do not fork or delegate subscription ownership. This skill has no subcommands and does not accept a user-named watch ID.
+Create a GitHub watch for the CURRENT session using the github MCP tools provided by the github plugin. Do not use another GitHub integration's tools. Execute here; do not fork or delegate subscription ownership. This skill has no subcommands and does not accept a user-named watch ID.
 
 1. Parse $ARGUMENTS into explicit host, owner/repo, kind (run, workflow, issue, pr, repository), identifiers, event families and delivery detail. Clarify missing/ambiguous repo, ID or scope BEFORE creating anything. Never execute the description as shell or gh arguments. Do not call a model API.
 2. Call subscribe with structured targets, initial=snapshot and delivery.mode=auto. Issue events: lifecycle/comments. PR: lifecycle/comments/reviews/review_comments. Run/workflow: run/job/step. Repository: objects issue/pr and lifecycle only. Run attempt defaults latest. Return watch_id, normalized targets and per-target subscription_id. Server deduplicates identical normalized rules within this consumer; it does not deduplicate different sessions.

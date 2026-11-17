@@ -22,7 +22,7 @@ const server = Bun.serve({
     let toolId = `toolu_${plan.stage}_${pending}`
     if (step && !name && !results.some((r: any) => r.tool_use_id === `toolu_${plan.stage}_search_${pending}`)) {
       name = (body.tools ?? []).find((t: any) => t.name === 'ToolSearch')?.name
-      if (name) { input = { query: `github-claude-channel ${step.tool}`, max_results: 5 }; toolId = `toolu_${plan.stage}_search_${pending}` }
+      if (name) { input = { query: `github ${step.tool}`, max_results: 5 }; toolId = `toolu_${plan.stage}_search_${pending}` }
     }
     const failed = step && !name
     const block = step && name

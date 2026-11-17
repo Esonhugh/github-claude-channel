@@ -8,6 +8,7 @@ import { join, resolve } from 'node:path'
 
 const entry=process.env.GHC_TEST_ENTRY?resolve(process.env.GHC_TEST_ENTRY):resolve(import.meta.dir,'../src/cli.ts')
 const fake=resolve(import.meta.dir,'fixtures/gh.ts')
+const evidenceDir=process.env.GHC_EVIDENCE_DIR?resolve(process.env.GHC_EVIDENCE_DIR):resolve(import.meta.dir,'../docs/evidence')
 async function until<T>(f:()=>Promise<T|undefined>,timeout=10000):Promise<T> {
   const end=Date.now()+timeout
   while(Date.now()<end){const found=await f();if(found!==undefined)return found;await Bun.sleep(30)}
@@ -35,6 +36,7 @@ async function context(routes:Record<string,any>,overrides:Record<string,string>
     const transport=new StdioClientTransport({command:process.execPath,args:[entry,'stdio'],env:{...env,...(file?{GHC_CONSUMER_FILE:file}:{})},stderr:'pipe'})
     clients.push(c);await c.connect(transport)
     if(transport.pid)adapterPids.push(transport.pid)
+    expect(c.getServerVersion()?.name).toBe('github')
     const call=async(name:string,args:Record<string,any>={})=>{
       const r=await c.callTool({name,arguments:args})
       const text=(r.content as any[])[0]?.text
@@ -56,11 +58,11 @@ async function context(routes:Record<string,any>,overrides:Record<string,string>
     await Promise.race([p.exited,Bun.sleep(5000).then(()=>{if(p.exitCode===null)p.kill('SIGKILL')})])
     const logs={pid:p.pid,stdout:await stdout,stderr:await stderr}
     // Credentials/runtime fixtures are always reclaimed. Evidence contains only lifecycle metadata.
-    await mkdir(resolve(import.meta.dir,'../docs/evidence'),{recursive:true})
+    await mkdir(evidenceDir,{recursive:true})
     const ghPids=await readFile(trace,'utf8').then(s=>[...new Set(s.trim().split('\n').filter(Boolean).map(x=>JSON.parse(x).pid))]).catch(()=>[])
     const started=[p.pid,...adapterPids,...extras.map(p=>p.pid),...ghPids]
     const remaining=started.filter(pid=>{try{process.kill(pid,0);return true}catch{return false}})
-    await writeFile(resolve(import.meta.dir,`../docs/evidence/integration-${p.pid}-resources.json`),JSON.stringify({...logs,socket,temporary_root:root,adapter_pids:adapterPids,stream_pids:extras.map(p=>p.pid),gh_pids:ghPids,reclaimed:remaining.length===0,remaining_pids:remaining},null,2)+'\n')
+    await writeFile(join(evidenceDir,`integration-${p.pid}-resources.json`),JSON.stringify({...logs,socket,temporary_root:root,adapter_pids:adapterPids,stream_pids:extras.map(p=>p.pid),gh_pids:ghPids,reclaimed:remaining.length===0,remaining_pids:remaining},null,2)+'\n')
     await rm(root,{recursive:true,force:true})
     expect(remaining).toEqual([])
   }
@@ -237,7 +239,8 @@ test('two adapters automatically start exactly one shared daemon; all startup-ra
     const launched=dir?await readFile(join(dir,'launches.jsonl'),'utf8').then(s=>s.trim().split('\n').map(x=>JSON.parse(x).pid as number)).catch(()=>[]):[]
     pids.push(...launched)
     await until(async()=>pids.every(pid=>{try{process.kill(pid,0);return false}catch{return true}})?true:undefined)
-    await writeFile(resolve(import.meta.dir,`../docs/evidence/bootstrap-${launched[0]??Date.now()}-resources.json`),JSON.stringify({pids,socket,reclaimed:true,remaining_pids:[]},null,2)+'\n')
+    await mkdir(evidenceDir,{recursive:true})
+    await writeFile(join(evidenceDir,`bootstrap-${launched[0]??Date.now()}-resources.json`),JSON.stringify({pids,socket,reclaimed:true,remaining_pids:[]},null,2)+'\n')
     await rm(root,{recursive:true,force:true})
   }
 },30000)

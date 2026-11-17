@@ -4,7 +4,7 @@
 
 ## 1. 结论与范围
 
-建议实现独立的 `github-claude-channel` 插件：每个 MCP 连接启动一个 stdio adapter；同一操作系统用户、同一认证 profile 的 adapter 共享本机 watcher daemon。daemon 使用 `gh api` 查询 GitHub，通过 SQLite 保存订阅、快照与已采集事件，按消费者定向投递。
+仓库/package/状态品牌为 `github-claude-channel`，同仓库提供同名 marketplace，根插件与 MCP server 名为 `github`。每个 MCP 连接启动一个 stdio adapter；同一操作系统用户、同一认证 profile 的 adapter 共享本机 watcher daemon。daemon 使用 `gh api` 查询 GitHub，通过 SQLite 保存订阅、快照与已采集事件，按消费者定向投递。
 
 这不是把 GitHub 所有事件当作 agent 指令的桥接器。首版只读，不调用 LLM API、不提供 GitHub 写工具、不声明 `claude/channel/permission`，GitHub review approval 不具有本地工具授权含义。
 
@@ -75,10 +75,13 @@
 
 ### 打包建议
 
-- `.claude-plugin/plugin.json`：插件元数据；fork 下可选 channels 声明。
-- `.mcp.json`：stdio server `github-claude-channel`，命令为 Bun，脚本路径使用插件根路径变量。
-- `skills/github-claude-channel/SKILL.md`：解释订阅工具及外部内容信任边界；不负责维持后台轮询。
+- `.claude-plugin/plugin.json`：插件 `github` 的元数据；fork 下可选 channels 声明。
+- `.claude-plugin/marketplace.json`：marketplace `github-claude-channel`，owner 为 `{ "name": "Esonhugh" }`，唯一插件 `github` 的 `source: "./"` 相对于仓库根目录，与根插件 version `0.1.0` 匹配。
+- `.mcp.json`：stdio server `github`，命令为 Bun，脚本路径使用插件根路径变量。
+- `skills/subscribe/SKILL.md`、`skills/unsubscribe/SKILL.md`、`skills/list/SKILL.md`：调用 `github` MCP、解释外部内容信任边界；不负责维持后台轮询。
 - `src/` 与测试：插件内部实现。
+
+宿主内先执行 `/plugin marketplace add Esonhugh/github-claude-channel`，再执行 `/plugin install github@github-claude-channel`。已安装插件的开发频道入口为 `--dangerously-load-development-channels plugin:github@github-claude-channel`；本地源码开发才用 `--plugin-dir` 配合 `server:plugin:github:github`。两者都不能绕过组织策略，正常 `--channels` 仍需满足允许名单。新命名入口不追溯修改历史验收记录。
 
 普通 MCP 配置不自动启用 Channels。自定义频道需遵守宿主 allowlist/开发确认机制；不能声称装上插件就能在所有官方客户端主动推送。[S1] fork 的 channels manifest 扩展也不能直接宣称为官方插件 schema 保证。
 
@@ -174,12 +177,12 @@ Actions 保留原始 status/conclusion，兼容新增值；不把 cancelled、sk
 
 ### subscribe 命令 / skill 入口
 
-计划提供 `/github-claude-channel:subscribe`、`/github-claude-channel:unsubscribe`、`/github-claude-channel:list` 三个 skill，语法：
+提供 `/github:subscribe`、`/github:unsubscribe`、`/github:list` 三个 skill，语法：
 
 ```text
-/github-claude-channel:subscribe <描述>
-/github-claude-channel:unsubscribe <watch-id>
-/github-claude-channel:list
+/github:subscribe <描述>
+/github:unsubscribe <watch-id>
+/github:list
 ```
 
 `/subscribe`、`/unsubscribe`、`/list` 短名是否可用取决于宿主解析和命名冲突，不保证。subscribe 不设子命令、不要求预先命名句柄；退订仅有独立 unsubscribe 入口，不提供兼容别名。list 复用 MCP subscriptions，不新增重复工具：只列当前 consumer/session，按 watch_id 分组分页，展示目标/事件范围摘要、采集状态、最近成功采集时间、待投递数量。空列表明确显示“无订阅”，不显示其他 session。当前已交付三个 skill 文件；真实宿主 dispatch/装载仍待外部验收。
@@ -189,11 +192,11 @@ watch_id 是服务端生成的 opaque 句柄，成功后与规范化订阅范围
 示例（均为未来语法示例，不是本轮实际订阅）：
 
 ```text
-/github-claude-channel:subscribe 监听 owner/repo 的 PR #42：关闭、重开、合并、review 和行内意见；同时监听 owner/other 的 issue #17 新评论及关闭、重开
-/github-claude-channel:subscribe 监听 owner/repo 的 run 123456789，跟随最新 attempt，通知成功、失败及每个 job/step 状态
-/github-claude-channel:subscribe 监听 owner/repo 新建、关闭、重开的 issue 和 PR，不订阅评论
-/github-claude-channel:unsubscribe watch_opaque
-/github-claude-channel:list
+/github:subscribe 监听 owner/repo 的 PR #42：关闭、重开、合并、review 和行内意见；同时监听 owner/other 的 issue #17 新评论及关闭、重开
+/github:subscribe 监听 owner/repo 的 run 123456789，跟随最新 attempt，通知成功、失败及每个 job/step 状态
+/github:subscribe 监听 owner/repo 新建、关闭、重开的 issue 和 PR，不订阅评论
+/github:unsubscribe watch_opaque
+/github:list
 ```
 
 skill 在当前请求 session 内将自然语言解析成明确的 host/repo/kind/编号/events/filters，再调用结构化 MCP subscribe/unsubscribe；对象有歧义（如只有“42”）、缺 repo 或“只看重要意见”无法确定过滤时先澄清，不创建订阅。成功后展示服务端返回的 watch_id 与规范化范围，不能把原始描述拼成 shell、gh 参数或执行指令。

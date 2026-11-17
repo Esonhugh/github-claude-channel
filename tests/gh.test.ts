@@ -18,7 +18,7 @@ async function fake(routes:any,fn:(gh:GitHub)=>Promise<void>,overrides:Record<st
     const pids=await readFile(values.GHC_TRACE_FILE!,'utf8').then(s=>s.trim().split('\n').filter(Boolean).map(x=>JSON.parse(x).pid as number)).catch(()=>[])
     const remaining=pids.filter(pid=>{try{process.kill(pid,0);return true}catch{return false}})
     resources.push({temporary_root:dir,pids,reclaimed:remaining.length===0,remaining_pids:remaining})
-    const evidence=resolve(import.meta.dir,'../docs/evidence');await mkdir(evidence,{recursive:true})
+    const evidence=process.env.GHC_EVIDENCE_DIR?resolve(process.env.GHC_EVIDENCE_DIR):resolve(import.meta.dir,'../docs/evidence');await mkdir(evidence,{recursive:true})
     await writeFile(join(evidence,`unit-gh-${process.pid}-resources.json`),JSON.stringify(resources,null,2)+'\n')
     for(const [key,value]of Object.entries(old)){if(value===undefined)delete process.env[key];else process.env[key]=value}
     await rm(dir,{recursive:true,force:true});expect(remaining).toEqual([])
