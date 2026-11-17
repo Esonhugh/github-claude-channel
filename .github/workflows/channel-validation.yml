@@ -1,0 +1,55 @@
+name: Channel validation
+run-name: Channel validation ${{ inputs.marker || github.run_id }}
+
+on:
+  push:
+    branches: [Skyworship]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      outcome:
+        description: Expected result for a deliberately observable test run
+        type: choice
+        options: [success, failure]
+        default: success
+      marker:
+        description: Unique correlation marker for the GitHub channel smoke test
+        type: string
+        default: manual
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.4.4'
+      - name: Install locked dependencies
+        run: bun install --frozen-lockfile
+      - name: Test
+        run: bun test
+      - name: Typecheck
+        run: bun run typecheck
+      - name: Build
+        run: bun run build
+      - name: Keep a running step observable
+        if: github.event_name == 'workflow_dispatch'
+        run: sleep 90
+      - name: Observable next step
+        if: github.event_name == 'workflow_dispatch'
+        run: sleep 35
+      - name: Requested terminal result
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          EXPECTED_OUTCOME: ${{ inputs.outcome }}
+        run: |
+          if [ "$EXPECTED_OUTCOME" = failure ]; then
+            echo 'Intentional failure fixture for github-claude-channel validation'
+            exit 1
+          fi
+          echo 'Successful terminal fixture'
